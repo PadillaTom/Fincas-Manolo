@@ -1,11 +1,25 @@
 // Imports:
-import './CSS/app.css';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// Components:
+
+// Pages:
+import { Home, ErrorPage } from './Pages';
 
 function App() {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
+    <>
+      <Router>
+        <Switch>
+          <Route path='/' exact>
+            <Home></Home>
+          </Route>
+          <Route path='*'>
+            <ErrorPage></ErrorPage>
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 
