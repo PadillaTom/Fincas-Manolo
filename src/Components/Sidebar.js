@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   AiOutlineMail,
@@ -11,24 +11,15 @@ import {
 import { links } from '../Utils/constants';
 // Context:
 import { useProductsContext } from '../Context/products_context';
+import GetInnerHeight from '../Utils/helpers';
 
 const Sidebar = () => {
-  // Window Inner Height:
-  const [height, setHeight] = useState(window.innerHeight);
-  const updateDimensions = () => {
-    setHeight(window.innerHeight);
-  };
-  useEffect(() => {
-    window.addEventListener('resize', updateDimensions);
-    return () => window.removeEventListener('resize', updateDimensions);
-  }, []);
-
   // Hook Context:
   const { isSidebarOpen, closeSidebar } = useProductsContext();
-
+  const myHeight = GetInnerHeight();
   return (
     <aside
-      style={{ maxHeight: { height } }}
+      style={{ maxHeight: { myHeight } }}
       className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
     >
       {/* Links */}
