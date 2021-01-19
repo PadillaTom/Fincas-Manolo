@@ -4,7 +4,15 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Components:
 import { Navbar, Sidebar } from './Components';
 // Pages:
-import { Home, ErrorPage } from './Pages';
+import {
+  Home,
+  ErrorPage,
+  NosotrosPage,
+  OlivarPage,
+  ProductsPage,
+  ContactPage,
+  GalleryPage,
+} from './Pages';
 
 function App() {
   return (
@@ -15,6 +23,21 @@ function App() {
         <Switch>
           <Route path='/' exact>
             <Home></Home>
+          </Route>
+          <Route path='/nosotros'>
+            <NosotrosPage></NosotrosPage>
+          </Route>
+          <Route path='/el-olivar'>
+            <OlivarPage></OlivarPage>
+          </Route>
+          <Route path='/productos'>
+            <ProductsPage></ProductsPage>
+          </Route>
+          <Route path='/contacto'>
+            <ContactPage></ContactPage>
+          </Route>
+          <Route path='/gallery'>
+            <GalleryPage></GalleryPage>
           </Route>
           <Route path='*'>
             <ErrorPage></ErrorPage>
