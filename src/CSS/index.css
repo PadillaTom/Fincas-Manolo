@@ -13,7 +13,8 @@ a {
 /* Sections */
 .section {
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  margin-top: 4rem; }
 
 .section-center {
   width: 90%;
@@ -99,15 +100,16 @@ a {
   cursor: pointer;
   font-size: 1.6rem; }
 
+/*  ::::: Sidebar Component :::::  */
 .sidebar {
   text-align: center;
   position: fixed;
   top: 4rem;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: #fafafa;
-  transform: scale(-0.02);
+  transform: scale(0.95);
   opacity: 0;
   transition: 0.15s linear all;
   z-index: -1; }
@@ -117,11 +119,80 @@ a {
   opacity: 1;
   z-index: 999; }
 
+.side-links {
+  display: flex;
+  height: 52%;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 1rem 0rem; }
+  .side-links li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: #0e0808;
+    font-weight: 0;
+    cursor: pointer;
+    transition: 0.25s linear all; }
+    .side-links li:hover {
+      color: #d5b13a; }
+
+.side-help {
+  margin: 1.25rem 0rem; }
+  .side-help h2 {
+    letter-spacing: 1px;
+    color: #2f2e2e;
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem; }
+
+.side-help-container {
+  margin-top: 0.75rem; }
+
+.side-help-item {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: center; }
+  .side-help-item .side-help-icon {
+    font-size: 1.7rem;
+    margin-top: 0.5rem; }
+  .side-help-item p {
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+    white-space: nowrap; }
+
+.side-social {
+  margin: 1.25rem 0rem; }
+  .side-social h2 {
+    letter-spacing: 1px;
+    color: #2f2e2e;
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem; }
+
+.side-social-container {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  .side-social-container * {
+    margin-top: 0.75rem;
+    font-size: 2.25rem;
+    cursor: pointer;
+    transition: 0.25s linear all;
+    color: #999999; }
+    .side-social-container *:hover {
+      color: #d5b13a; }
+
 /*  ::::: Homepage :::::  */
 .homepage {
-  margin-top: 4rem;
   background: red;
-  height: 150vh; }
+  height: 150vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: center; }
 
 /*  ::::: Homepage :::::  */
 /*  ::::: Homepage :::::  */
