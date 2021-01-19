@@ -4,11 +4,17 @@ const Hero = () => {
   return (
     <article className='heroContainer'>
       <img
-        src='https://firebasestorage.googleapis.com/v0/b/fincas-manolo.appspot.com/o/Sierras_de_Famatina_Chilecito.jpg?alt=media&token=11bb0548-c6a7-454a-83c9-6415b6f239ae'
+        src='https://firebasestorage.googleapis.com/v0/b/fincas-manolo.appspot.com/o/Aceites%20Hero.jpg?alt=media&token=d69e0531-189c-4e84-a993-2ffb140b14bb'
         alt='Sierras-Imagen'
         className='hero-bg-img'
       />
-      <div className='hero-info-container'></div>
+      <div className='hero-info-container'>
+        <h2>Elevada Altitud</h2>
+        <p>Aceites y Vinos Premium.</p>
+        <button type='button' className='primary-cta'>
+          Explorar
+        </button>
+      </div>
     </article>
   );
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
   AiOutlineMail,
@@ -13,11 +13,24 @@ import { links } from '../Utils/constants';
 import { useProductsContext } from '../Context/products_context';
 
 const Sidebar = () => {
-  // Hook Context
+  // Window Inner Height:
+  const [height, setHeight] = useState(window.innerHeight);
+  const updateDimensions = () => {
+    setHeight(window.innerHeight);
+  };
+  useEffect(() => {
+    window.addEventListener('resize', updateDimensions);
+    return () => window.removeEventListener('resize', updateDimensions);
+  }, []);
+  console.log(height);
+  // Hook Context:
   const { isSidebarOpen, closeSidebar } = useProductsContext();
 
   return (
-    <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
+    <aside
+      style={{ height: { height } }}
+      className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
+    >
       {/* Links */}
       <ul className='side-links'>
         {links.map((link) => {

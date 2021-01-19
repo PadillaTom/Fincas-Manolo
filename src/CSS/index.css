@@ -1,3 +1,7 @@
+/* Colors */
+/* Font Colors */
+/* Fonts */
+/* Others */
 * {
   margin: 0;
   padding: 0;
@@ -24,15 +28,29 @@ a {
   height: 100%;
   margin: 0 auto; }
 
-/* Font Colors */
-/* Fonts */
-/* Others */
+/* CTAs */
+.primary-cta {
+  padding: 0.6rem 3rem;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  background-color: #d5b13a;
+  cursor: pointer;
+  transition: 0.25s linear all;
+  color: #2b2828;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  text-transform: uppercase; }
+  .primary-cta:hover {
+    background-color: white;
+    color: #2b2828; }
+
 /* --------------------------------------------------- */
 /* --------------------- MAIN APP -------------------- */
 /* --------------------------------------------------- */
 /*  ::::: Error Page :::::  */
 .err-sect {
-  background: #2f2e2e; }
+  background: #2b2828; }
 
 .error-container {
   text-align: center;
@@ -64,7 +82,7 @@ a {
   color: white; }
   .error-cta:hover {
     background-color: white;
-    color: #2f2e2e; }
+    color: #2b2828; }
   .error-cta p {
     z-index: 1;
     letter-spacing: 1px;
@@ -82,7 +100,8 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  background: white; }
+  background: white;
+  z-index: 2; }
 
 .nav-center {
   width: 90%;
@@ -144,7 +163,7 @@ a {
   margin: 1.25rem 0rem; }
   .side-help h2 {
     letter-spacing: 1px;
-    color: #2f2e2e;
+    color: #2b2828;
     margin-bottom: 0.25rem;
     font-size: 1.5rem; }
 
@@ -169,7 +188,7 @@ a {
   margin: 1.25rem 0rem; }
   .side-social h2 {
     letter-spacing: 1px;
-    color: #2f2e2e;
+    color: #2b2828;
     margin-bottom: 0.25rem;
     font-size: 1.5rem; }
 
@@ -190,22 +209,38 @@ a {
       color: #d5b13a; }
 
 /*  ::::: Homepage :::::  */
-.homepage {
-  background: red;
-  height: 150vh;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  text-align: center; }
-
 /*  ::::: Hero Component :::::  */
 .heroContainer {
   max-width: 100%;
-  height: 70%; }
+  height: 80%;
+  position: relative;
+  text-align: center; }
 
 .hero-bg-img {
   width: 100%;
   height: 100%;
   object-fit: cover; }
+
+.hero-info-container {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  background: #ffffff7c;
+  width: 100%;
+  padding: 2rem 0rem; }
+  .hero-info-container h2 {
+    color: #2a2a2a;
+    font-family: "";
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 0.25rem; }
+  .hero-info-container p {
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.9px;
+    padding-bottom: 1rem;
+    color: #0e0808; }
 
 /*  ::::: Homepage :::::  */
 /*  ::::: Homepage :::::  */
