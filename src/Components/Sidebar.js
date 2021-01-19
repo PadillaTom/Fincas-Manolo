@@ -22,13 +22,13 @@ const Sidebar = () => {
     window.addEventListener('resize', updateDimensions);
     return () => window.removeEventListener('resize', updateDimensions);
   }, []);
-  console.log(height);
+
   // Hook Context:
   const { isSidebarOpen, closeSidebar } = useProductsContext();
 
   return (
     <aside
-      style={{ height: { height } }}
+      style={{ height: `calc(${height} - 4rem)` }}
       className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
     >
       {/* Links */}
