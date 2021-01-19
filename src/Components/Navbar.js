@@ -1,17 +1,33 @@
 import React from 'react';
-import { AiOutlineBars } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import { AiOutlineBars, AiOutlineClose } from 'react-icons/ai';
 // Data:
+import FMLogoPNG from '../Assets/FMLogoPNG.png';
+// Context:
+import { useProductsContext } from '../Context/products_context';
 
 const Navbar = () => {
+  const { openSidebar, closeSidebar, isSidebarOpen } = useProductsContext();
+
   return (
     <>
       {/* MOBILE */}
-      <nav className='navbar'>
-        <div className='mobile-nav'>
-          <div className='nav-ham'>
-            <AiOutlineBars></AiOutlineBars>
+      <nav className='navContainer'>
+        <div className='nav-center'>
+          <div className='nav-header'>
+            <button className='nav-toggle' type='button'>
+              {isSidebarOpen ? (
+                <AiOutlineClose onClick={closeSidebar}></AiOutlineClose>
+              ) : (
+                <AiOutlineBars onClick={openSidebar}></AiOutlineBars>
+              )}
+            </button>
+
+            <Link to='/'>
+              <img src={FMLogoPNG} alt='Inicio' />
+            </Link>
           </div>
-          <div className='nav-logo'>Fincas Manolo</div>
+          {/* DESKTOP LINKS */}
         </div>
       </nav>
     </>
