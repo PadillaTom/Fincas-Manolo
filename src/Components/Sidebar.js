@@ -28,7 +28,7 @@ const Sidebar = () => {
 
   return (
     <aside
-      style={{ height: `calc(${height} - 4rem)` }}
+      style={{ maxHeight: { height } }}
       className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
     >
       {/* Links */}
