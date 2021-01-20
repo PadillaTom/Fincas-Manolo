@@ -210,6 +210,9 @@ a {
       color: #d5b13a; }
 
 /*  ::::: Homepage :::::  */
+.home-sect {
+  height: auto; }
+
 /*  ::::: Hero Component :::::  */
 .heroContainer {
   max-width: 100%;
@@ -323,7 +326,7 @@ a {
 
 /*  ::::: Featured Products :::::  */
 .featuredContainer {
-  width: 95%;
+  width: 90%;
   margin: 0 auto; }
 
 .featured {
@@ -410,6 +413,6 @@ a {
 /*  ::::: Homepage :::::  */
 /*  ::::: Homepage :::::  */
 /*  ::::: Homepage :::::  */
-/*  ::::: Homepage :::::  */
+/*  ::::: Footer :::::  */
 
 /*# sourceMappingURL=index.css.map */

@@ -2,7 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Components:
-import { Navbar, Sidebar } from './Components';
+import { Navbar, Sidebar, Footer } from './Components';
 // Pages:
 import {
   Home,
@@ -20,9 +20,9 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop></ScrollToTop>
         <Navbar></Navbar>
         <Sidebar></Sidebar>
-        <ScrollToTop></ScrollToTop>
         <Switch>
           <Route path='/' exact>
             <Home></Home>
@@ -46,6 +46,7 @@ function App() {
             <ErrorPage></ErrorPage>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </>
   );
