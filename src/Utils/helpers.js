@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-// :::::: CONSTANTS :::::::
+// :::::: HELPERS :::::::
 // Helper Functions to be called.
 
 // ---> Inner Height <---
@@ -14,5 +14,9 @@ const GetInnerHeight = () => {
   }, []);
   return IHeight;
 };
-
 export default GetInnerHeight;
+
+// ---> Inner Height <---
+// ---> Inner Height <---
+// ---> Inner Height <---
+// ---> Inner Height <---

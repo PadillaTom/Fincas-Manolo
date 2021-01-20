@@ -17,9 +17,10 @@ const Sidebar = () => {
   // Hook Context:
   const { isSidebarOpen, closeSidebar } = useProductsContext();
   const myHeight = GetInnerHeight();
+  console.log(myHeight);
   return (
     <aside
-      style={{ maxHeight: { myHeight } }}
+      style={{ height: `${myHeight}` }}
       className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
     >
       {/* Links */}
