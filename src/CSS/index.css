@@ -404,10 +404,60 @@ button {
 /*  ::::: Homepage :::::  */
 /*  ::::: Homepage :::::  */
 /*  ::::: Footer :::::  */
+.footerContainer {
+  border-top: 1px solid #48484879;
+  width: 100%;
+  background: #999999; }
+  .footerContainer h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem; }
+
+.footer-center {
+  width: 95%;
+  margin: 0 auto; }
+
 .footer-light {
-  padding: 1.2rem 0rem; }
+  padding-top: 1.5rem;
+  width: 100%; }
 
 .footer-dark {
-  padding: 0.5rem 0rem; }
+  padding: 0.5rem 0rem;
+  margin: 0 auto;
+  text-align: center;
+  background: #2b2828;
+  color: #999999;
+  letter-spacing: 1px; }
+
+.footer-site-map {
+  margin-bottom: 1.25rem; }
+
+.footer-links {
+  margin: 0.3rem 0rem; }
+  .footer-links li {
+    margin-top: 0.25rem; }
+
+.footer-contact {
+  margin-bottom: 1.25rem; }
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  margin: 0.3rem 0rem; }
+  .footer-contact-item p {
+    margin-left: 1.5rem; }
+
+.footer-social {
+  margin-bottom: 1.25rem;
+  text-align: left; }
+
+.footer-social-icons {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.25s linear all; }
+  .footer-social-icons * {
+    margin-right: 1.5rem; }
 
 /*# sourceMappingURL=index.css.map */
