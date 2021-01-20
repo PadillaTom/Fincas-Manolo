@@ -28,20 +28,16 @@ $CTAGold: #d5b13a
 /* Fonts */
 $MainFont: "Open Sans", sans-serif
 $SecondaryFont: "Montserrat", sans-serif
-$TitlesFont: ''
-$SubtitlesFont: ''
 /* Others */
 $MainTrans: 0.25s linear all
 $FastTrans: 0.15s linear all
 $MaxWidth: 1200px
-
 
 // /* 
 // ::::::::::::::::::::::::
 // ---> GLOBALS <---
 // ::::::::::::::::::::::::
 //  */
-
 * 
   margin: 0
   padding: 0
@@ -49,32 +45,30 @@ $MaxWidth: 1200px
 html
   max-width: 100vw
   background-color: $MainBGColor
-
 ul 
   list-style: none
-
 a 
   text-decoration: none
   color: inherit
+button 
+  border: none
+  outline: none
+  backgorund: none
 
 /* Sections */
 .section 
-  width: 100vw
-  height: 100vh
+  width: 100vw  
   margin-top: 4rem
-
 .section-center 
   width: 90%
   height: 100%
   margin: 0 auto
 
-/* CTAs */
+/* CTA */
 .primary-cta    
-  padding: 0.6rem 3rem
-  border: none
-  outline: none
+  padding: 0.6rem 3rem  
   border-radius: 0.3rem
-  background-color: $CTAGold
+  background: $CTAGold
   cursor: pointer
   transition: $MainTrans
   color: $Gray1
@@ -82,7 +76,7 @@ a
   font-weight: bold
   text-transform: uppercase
   &:hover
-    background-color: white
+    background: white
     color: $Gray1
 
 /* --------------------------------------------------- */
@@ -150,7 +144,7 @@ a
   justify-content: space-between
   img
     width: 6rem
-    margin-top: 0.35rem   
+    margin-top: 0.35rem      
 .nav-toggle
   background: transparent
   border: none
@@ -174,6 +168,7 @@ a
   transform: scale(1)
   opacity: 1
   z-index: 999
+
 // Links
 .side-links 
   display: flex  
@@ -192,6 +187,7 @@ a
     transition: $MainTrans
     &:hover
       color: $CTAGold
+
 // Help
 .side-help  
   margin: 1.25rem 0rem  
@@ -215,6 +211,7 @@ a
     margin-left: 1.5rem    
     font-size: 1.3rem
     white-space: nowrap 
+
 // Social 
 .side-social
   margin: 1.25rem 0rem  
@@ -263,7 +260,7 @@ a
   padding: 2rem 0rem
   h2
     color: $TitleColor
-    font-family: $TitlesFont
+    font-family: $MainFont
     letter-spacing: 1px
     font-weight: 600
     font-size: 2rem
@@ -275,7 +272,6 @@ a
     color: $PrimaryFontColor
 
 /*  ::::: Services :::::  */
-.services-home 
 .scrollContainer
   width: 95%
   height: 27rem
@@ -316,7 +312,7 @@ a
     font-size: 1.7rem
     letter-spacing: 1.2px
     font-weight: 500
-    font-family: $TitlesFont
+    font-family: $MainFont
   p
     color: $TitleColor
     letter-spacing: 0.9px
@@ -329,9 +325,6 @@ a
   left: 3%
   top: 50%
   transform: translate(-3%,-50%)
-  background: none
-  border: none
-  outline: none
   font-size: 2rem
   color: $SubtitleColor2
   cursor: pointer
@@ -339,14 +332,10 @@ a
   position: absolute
   right: 3%
   top: 50%
-  transform: translate(3%,-50%)
-  background: none
-  border: none
-  outline: none
+  transform: translate(3%,-50%)  
   font-size: 2rem
   color: $SubtitleColor2
   cursor: pointer
-
   
 /*  ::::: Featured Products :::::  */
 .featuredContainer
@@ -381,17 +370,14 @@ a
     font-size: 1.6rem
     letter-spacing: 0.8px
     text-transform: uppercase
-    font-family: $TitlesFont
+    font-family: $MainFont
     margin-bottom: 0.25rem
     color: $MainBGColor
   p
     font-size: 1rem
     letter-spacing: 0.7px
     color: $SecondaryFontColor
-  button
-    border: none
-    outline: none
-    background: none
+  button    
     margin-top: 0.7rem
     color: white
     letter-spacing: 1px
@@ -408,7 +394,7 @@ a
     font-size: 1.6rem
     letter-spacing: 0.8px
     text-transform: uppercase
-    font-family: $TitlesFont
+    font-family: $MainFont
     margin-bottom: 0.25rem
     color: $MainBGColor
   p
@@ -416,9 +402,6 @@ a
     letter-spacing: 0.7px
     color: $SecondaryFontColor
   button
-    border: none
-    outline: none
-    background: none
     margin-top: 0.7rem
     color: white
     letter-spacing: 1px
@@ -434,4 +417,9 @@ a
 /*  ::::: Homepage :::::  */
 /*  ::::: Homepage :::::  */
 /*  ::::: Homepage :::::  */
+
 /*  ::::: Footer :::::  */
+.footer-light
+  padding: 1.2rem 0rem
+.footer-dark 
+  padding: 0.5rem 0rem
