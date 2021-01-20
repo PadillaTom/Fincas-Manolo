@@ -2,9 +2,7 @@
 // Data to be Consumed inside the App -->
 // Links for Routing, Products, Etc...
 
-import React from 'react';
-
-// ---> LINKS <---
+// ---> Links <---
 export const links = [
   {
     id: 1,
@@ -38,7 +36,8 @@ export const links = [
   },
 ];
 
-// ---> ARTICULOS <---
+// ---> Featured Products <---
+
 // ---> SERVICIOS <---
 // ---> NOSOTROS <---
 // ---> ACEITES <---
