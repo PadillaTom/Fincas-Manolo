@@ -13,6 +13,8 @@ import {
   ContactPage,
   GalleryPage,
 } from './Pages';
+// Helpers
+import ScrollToTop from './Utils/helpers';
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
       <Router>
         <Navbar></Navbar>
         <Sidebar></Sidebar>
+        <ScrollToTop></ScrollToTop>
         <Switch>
           <Route path='/' exact>
             <Home></Home>

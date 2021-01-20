@@ -113,7 +113,8 @@ a {
   align-items: center;
   justify-content: space-between; }
   .nav-header img {
-    width: 6rem; }
+    width: 6rem;
+    margin-top: 0.35rem; }
 
 .nav-toggle {
   background: transparent;

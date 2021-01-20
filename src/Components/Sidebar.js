@@ -11,13 +11,12 @@ import {
 import { links } from '../Utils/constants';
 // Context:
 import { useProductsContext } from '../Context/products_context';
-import GetInnerHeight from '../Utils/helpers';
+import { GetInnerHeight } from '../Utils/helpers';
 
 const Sidebar = () => {
   // Hook Context:
   const { isSidebarOpen, closeSidebar } = useProductsContext();
   const myHeight = GetInnerHeight();
-  console.log(myHeight);
   return (
     <aside
       style={{ height: `${myHeight}px` }}
