@@ -20,7 +20,7 @@ const Sidebar = () => {
   console.log(myHeight);
   return (
     <aside
-      style={{ height: `${myHeight}` }}
+      style={{ height: `${myHeight}px` }}
       className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
     >
       {/* Links */}

@@ -142,10 +142,10 @@ a {
 
 .side-links {
   display: flex;
-  height: 52%;
+  height: 35%;
   flex-direction: column;
-  justify-content: space-around;
-  margin: 1rem 0rem; }
+  justify-content: space-between;
+  margin: 1.5rem 0rem; }
   .side-links li {
     font-family: "Open Sans", sans-serif;
     font-size: 1.8rem;
