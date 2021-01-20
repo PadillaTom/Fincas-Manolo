@@ -47,6 +47,7 @@ $MaxWidth: 1200px
   box-sizing: border-box
 html
   max-width: 100vw
+  background-color: $MainBGColor
 
 ul 
   list-style: none
@@ -239,7 +240,6 @@ a
 
 /*  ::::: Homepage :::::  */
 .home-sect 
-  background-color: $MainBGColor
 
 /*  ::::: Hero Component :::::  */
 .heroContainer
@@ -273,13 +273,83 @@ a
     color: $PrimaryFontColor
 
 /*  ::::: Services :::::  */
-.services-home
-  background: $SecBGColor
+.services-home 
+.scrollContainer
+  width: 95%
+  height: 27rem
+  margin: 0 auto
+  text-align: center
+  position: relative
+  display: flex
+  overflow: hidden
+.scrollItem
+  margin-top: 2rem
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  transition: $MainTrans
+  opacity: 0
+.activeSlide
+  opacity: 1
+  transform: translateX(0)
+.lastSlide
+  transform: translateX(-100%)
+.nextSlide
+  transform: translateX(100%)
+.scroll-img-container  
+  img
+    margin: 2rem auto
+    border-radius: 50%    
+    width: 12rem
+    height: 12rem
+    object-fit: cover
+    border: 4px solid $MainColor
+.scroll-desc-container
+  h4
+    text-transform: uppercase
+    color: $SubtitleColor1
+    margin-bottom: 1rem
+    font-size: 1.7rem
+    letter-spacing: 1.2px
+    font-weight: 500
+    font-family: $TitlesFont
+  p
+    color: $TitleColor
+    letter-spacing: 0.9px
+    font-size: 1.3rem
+    font-weight: 500   
+    width: 85%
+    margin: 0 auto
+.scroll-prev
+  position: absolute
+  left: 3%
+  top: 50%
+  transform: translate(-3%,-50%)
+  background: none
+  border: none
+  outline: none
+  font-size: 2rem
+  color: $SubtitleColor2
+  cursor: pointer
+.scroll-next
+  position: absolute
+  right: 3%
+  top: 50%
+  transform: translate(3%,-50%)
+  background: none
+  border: none
+  outline: none
+  font-size: 2rem
+  color: $SubtitleColor2
+  cursor: pointer
+
+  
 /*  ::::: Featured Products :::::  */
 .featuredContainer
   width: 95%
-  margin: 0 auto  
-  background: $MainBGColor
+  margin: 0 auto 
 .featured
   width: 100%
   height: 17rem
