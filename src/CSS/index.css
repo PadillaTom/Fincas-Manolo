@@ -209,6 +209,9 @@ a {
       color: #d5b13a; }
 
 /*  ::::: Homepage :::::  */
+.home-sect {
+  background-color: #fafafa; }
+
 /*  ::::: Hero Component :::::  */
 .heroContainer {
   max-width: 100%;
