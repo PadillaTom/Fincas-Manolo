@@ -367,7 +367,8 @@ button {
     color: white;
     letter-spacing: 1px;
     cursor: pointer;
-    transition: 0.25s linear all; }
+    transition: 0.25s linear all;
+    background: transparent; }
 
 .featured-vinos-info {
   margin: 0 auto;
@@ -392,7 +393,8 @@ button {
     color: white;
     letter-spacing: 1px;
     cursor: pointer;
-    transition: 0.25s linear all; }
+    transition: 0.25s linear all;
+    background: transparent; }
 
 /*  ::::: Homepage :::::  */
 /*  ::::: Homepage :::::  */
@@ -424,7 +426,7 @@ button {
   width: 100%; }
 
 .footer-dark {
-  padding: 0.5rem 0rem;
+  padding: 1rem 0rem;
   margin: 0 auto;
   text-align: center;
   background: #2b2828;
@@ -445,7 +447,7 @@ button {
 .footer-contact-item {
   display: flex;
   align-items: center;
-  margin: 0.3rem 0rem; }
+  margin: 0.5rem 0rem; }
   .footer-contact-item p {
     margin-left: 1.5rem; }
 
