@@ -2,9 +2,8 @@
 // ::::::::::::::::::::::::
 // ---> FONTS <---
 // ::::::::::::::::::::::::
-//  */
-  
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@300;400;600&display=swap')
+//  */  
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Raleway:wght@300;400;500;600;700&family=Roboto+Mono&display=swap')
 
 // /* 
 // ::::::::::::::::::::::::
@@ -13,21 +12,25 @@
 //  */  
 
 /* Colors */
-$MainBGColor: #fafafa
-$SecBGColor: #ededed
-$MainColor: #d4bb6c
+$MainWhite: #fff
+$SecondaryWhite: #fafafa
+$MainColor: #d5b13a
+$MainBlack: #000
 $Gray1: #2b2828
 /* Font Colors */
 $TitleColor: #2a2a2a
-$SubtitleColor1: #968345
 $SubtitleColor2: #8c1212
-$PrimaryFontColor: #0e0808
-$SecondaryFontColor: #b8c8bf
-$CTAInactive: #999999
+$UnderlineColor: #968345
+$FontMainColor: #0e0808
+$FontSecColor: #b8c8bf
+/* Ctas */
+$CTAInactive: #c5c5c5
 $CTAGold: #d5b13a
+
 /* Fonts */
-$MainFont: "Open Sans", sans-serif
-$SecondaryFont: "Montserrat", sans-serif
+$FontMain: 'Roboto Mono', monospace
+$FontTexts: 'Raleway', sans-serif
+$FontTitles: 'Playfair Display', serif
 /* Others */
 $MainTrans: 0.25s linear all
 $FastTrans: 0.15s linear all
@@ -44,7 +47,7 @@ $MaxWidth: 1200px
   box-sizing: border-box
 html
   max-width: 100vw
-  background-color: $MainBGColor
+  background-color: $MainWhite
 ul 
   list-style: none
 a 
@@ -53,7 +56,7 @@ a
 button 
   border: none
   outline: none
-  backgorund: none
+  background: transparent
 
 /* Sections */
 .section 
@@ -66,18 +69,20 @@ button
 
 /* CTA */
 .primary-cta    
-  padding: 0.6rem 3rem  
-  border-radius: 0.3rem
+  padding: 0.6rem 2.3rem  
+  border-radius: 0.2rem
   background: $CTAGold
+  font-family: $FontTitles
+  color: $MainWhite
+  font-size: 1.2rem
+  letter-spacing: 2px
+  font-weight: 600
+  text-transform: uppercase
   cursor: pointer
   transition: $MainTrans
-  color: $Gray1
-  letter-spacing: 1.2px
-  font-weight: bold
-  text-transform: uppercase
   &:hover
-    background: white
-    color: $Gray1
+    background: $MainWhite
+    color: $CTAGold
 
 /* --------------------------------------------------- */
 /* --------------------- MAIN APP -------------------- */
@@ -93,7 +98,7 @@ button
   left: 50%
   transform: translate(-50%, -50%)
   h1
-    color: $MainBGColor
+    color: $MainWhite
     white-space: nowrap
     font-size: 1.4rem
     letter-spacing: 1.2px
@@ -107,13 +112,13 @@ button
   margin: 0 auto  
   margin-top: 4rem
   padding: 0.6rem 0rem
-  background-color: $CTAGold
+  background: $CTAGold
   border-radius: 3rem
   cursor: pointer
   transition: $MainTrans
   color: white
   &:hover
-    background-color: white
+    background: white
     color: $Gray1
   p
     z-index: 1
@@ -132,7 +137,7 @@ button
   position: fixed
   top: 0
   left: 0
-  background: white
+  background: $SecondaryWhite
   z-index: 2
 .nav-center
   width: 90%
@@ -159,7 +164,7 @@ button
   top: 4rem
   left: 0
   width: 100%   
-  background: $MainBGColor 
+  background: $MainWhite
   transform: scale(0.95)
   opacity: 0
   transition: $FastTrans
@@ -177,11 +182,11 @@ button
   justify-content: space-between
   margin: 1.8rem 0rem
   li
-    font-family: $MainFont
+    font-family: $FontMain
     font-size: 1.8rem   
     text-transform: uppercase
     letter-spacing: 1.4px
-    color: $PrimaryFontColor
+    color: $FontMainColor
     font-weight: 00
     cursor: pointer
     transition: $MainTrans
@@ -243,7 +248,7 @@ button
 /*  ::::: Hero Component :::::  */
 .heroContainer
   max-width: 100%
-  height: 80%
+  height: 60%
   position: relative
   text-align: center
 .hero-bg-img  
@@ -255,21 +260,22 @@ button
   top: 80%
   left: 50%
   transform: translate(-50%, -80%)
-  background: #ffffff7c
+  background: #ffffff91
   width: 100%
-  padding: 2rem 0rem
+  padding: 1.5rem 0rem
   h2
     color: $TitleColor
-    font-family: $MainFont
+    font-family: $FontTitles
     letter-spacing: 1px
     font-weight: 600
     font-size: 2rem
     margin-bottom: 0.25rem
   p
-    font-family: $MainFont
+    font-family: $FontTexts
+    font-weight: 500
     letter-spacing: 0.9px
-    padding-bottom: 1rem
-    color: $PrimaryFontColor
+    padding-bottom: 1.5rem
+    color: $FontMainColor
 
 /*  ::::: Services :::::  */
 .scrollContainer
@@ -307,12 +313,12 @@ button
 .scroll-desc-container
   h4
     text-transform: uppercase
-    color: $SubtitleColor1
+    color: $MainColor
     margin-bottom: 1rem
     font-size: 1.7rem
     letter-spacing: 1.2px
     font-weight: 500
-    font-family: $MainFont
+    font-family: $FontMain
   p
     color: $TitleColor
     letter-spacing: 0.9px
@@ -327,7 +333,7 @@ button
   transform: translate(-3%,-50%)
   font-size: 2rem
   color: $SubtitleColor2
-  cursor: pointer
+  cursor: pointer  
 .scroll-next
   position: absolute
   right: 3%
@@ -335,7 +341,7 @@ button
   transform: translate(3%,-50%)  
   font-size: 2rem
   color: $SubtitleColor2
-  cursor: pointer
+  cursor: pointer  
   
 /*  ::::: Featured Products :::::  */
 .featuredContainer
@@ -370,13 +376,13 @@ button
     font-size: 1.6rem
     letter-spacing: 0.8px
     text-transform: uppercase
-    font-family: $MainFont
+    font-family: $FontMain
     margin-bottom: 0.25rem
-    color: $MainBGColor
+    color: $MainWhite
   p
     font-size: 1rem
     letter-spacing: 0.7px
-    color: $SecondaryFontColor
+    color: $FontSecColor
   button    
     margin-top: 0.7rem
     color: white
@@ -395,13 +401,13 @@ button
     font-size: 1.6rem
     letter-spacing: 0.8px
     text-transform: uppercase
-    font-family: $MainFont
+    font-family: $FontMain
     margin-bottom: 0.25rem
-    color: $MainBGColor
+    color: $MainWhite
   p
     font-size: 1rem
     letter-spacing: 0.7px
-    color: $SecondaryFontColor
+    color: $FontSecColor
   button
     margin-top: 0.7rem
     color: white
@@ -426,7 +432,7 @@ button
   width: 100%
   background: $CTAInactive
   h2
-    font-family: $SecondaryFont
+    font-family: $FontTexts
     font-size: 1.2rem
     letter-spacing: 1.3px
     text-transform: uppercase
