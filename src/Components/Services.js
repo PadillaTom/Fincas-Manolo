@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
+import { Loading } from '../Components';
 // Data:
 import { services } from '../Utils/constants';
 
@@ -23,7 +24,7 @@ const Services = () => {
   }, [index, myServices]);
   // Loading Component:
   if (myServices.lenght === 0) {
-    return <h1>Loading...</h1>;
+    return <Loading></Loading>;
   }
 
   return (

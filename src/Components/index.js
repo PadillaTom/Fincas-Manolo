@@ -1,4 +1,5 @@
 // Components IMPORTS:
+import Loading from './Loading';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import Hero from './Hero';
@@ -7,4 +8,13 @@ import FeaturedProducts from './FeaturedProducts';
 import Articles from './Articles';
 import Footer from './Footer';
 // Components  EXPORTS:
-export { Navbar, Sidebar, Hero, Services, FeaturedProducts, Articles, Footer };
+export {
+  Loading,
+  Navbar,
+  Sidebar,
+  Hero,
+  Services,
+  FeaturedProducts,
+  Articles,
+  Footer,
+};

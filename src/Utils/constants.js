@@ -68,8 +68,22 @@ export const services = [
   },
 ];
 
-// ---> NOSOTROS <---
-// ---> ACEITES <---
+// ---> Articles<---
+export const articles = [
+  {
+    id: 1,
+    title: 'Los Diaguitas',
+    subtitle: 'Nuestra Herencia',
+    contentTitle: 'Hace cientos de años',
+    content: `Nuestros viñedos se encuentran en tierras que habitaron los Diaguitas, pueblos originarios de La Rioja, Argentina, hace cientos de años. Fueron los Incas quienes les dieron ese nombre, que significa “gente de las colinas”.
+              La falta de lluvia, un problema constante y cotidiano para los Diaguitas, es ahora uno de los factores clave para producir los vinos de alta calidad que hoy se originan en este valle desierto y estéril. 
+              Para honrar la cultura Diaguita y su herencia hemos adoptado algunos de sus símbolos para representar nuestros vinos. Los Diaguitas creían que el Cóndor era la criatura más cercana a la divinidad y lo consideraban un mensajero de los espíritus.
+              El Puma que usamos en nuestro logo y las etiquetas de La Puerta representa el ser terrenal supremo por su sabiduría, fuerza e inteligencia.`,
+    desc:
+      'Nuestros viñedos se encuentran en tierras que habitaron los Diaguitas, pueblos originarios de La Rioja, Argentina, hace cientos de años.',
+  },
+];
+
 // ---> PRODUCTOS <---
 // ---> PRODUCTO INDIVIDUAL <---
 // ---> CONTACTO <---
