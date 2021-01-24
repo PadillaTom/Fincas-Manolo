@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { AiOutlineBars, AiOutlineClose } from 'react-icons/ai';
+import { FaBars } from 'react-icons/fa';
+import { AiOutlineClose, AiOutlineSearch } from 'react-icons/ai';
 // Data:
 import FMLogoPNG from '../Assets/FMLogoPNG.png';
+import FMHoriz from '../Assets/FMHoriz.png';
 // Context:
 import { useProductsContext } from '../Context/products_context';
 
@@ -19,13 +21,17 @@ const Navbar = () => {
               {isSidebarOpen ? (
                 <AiOutlineClose onClick={closeSidebar}></AiOutlineClose>
               ) : (
-                <AiOutlineBars onClick={openSidebar}></AiOutlineBars>
+                <FaBars onClick={openSidebar}></FaBars>
               )}
             </button>
-
-            <Link to='/'>
-              <img src={FMLogoPNG} alt='Inicio' />
-            </Link>
+            <div className='nav-logo'>
+              <Link to='/'>
+                <img src={FMHoriz} alt='Inicio' />
+              </Link>
+            </div>
+            <div className='nav-search'>
+              <AiOutlineSearch></AiOutlineSearch>
+            </div>
           </div>
           {/* DESKTOP LINKS */}
         </div>

@@ -35,6 +35,7 @@ const Sidebar = () => {
           );
         })}
       </ul>
+
       <hr />
       {/* Contact Mail */}
       <div className='side-help'>
@@ -55,6 +56,7 @@ const Sidebar = () => {
         </div>
       </div>
       <hr />
+
       {/* Social */}
       <div className='side-social'>
         <h2>Síguenos en:</h2>
