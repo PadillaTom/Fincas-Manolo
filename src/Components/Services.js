@@ -30,6 +30,9 @@ const Services = () => {
   return (
     <>
       <section className='services-home'>
+        <div className='section-center'>
+          <h2 className='services-title'>Ventajas</h2>
+        </div>
         <div className='scrollContainer'>
           {myServices.map((service, scrollIndex) => {
             const { id, name, desc, imgUrl } = service;

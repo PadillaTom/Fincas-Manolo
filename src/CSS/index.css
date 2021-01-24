@@ -254,9 +254,17 @@ button {
     color: #0e0808; }
 
 /*  ::::: Services :::::  */
+.services-title {
+  font-family: "Playfair Display", serif;
+  color: #2a2a2a;
+  font-size: 1.8rem;
+  letter-spacing: 1.2px;
+  text-align: center;
+  margin-top: 1.5rem; }
+
 .scrollContainer {
-  width: 95%;
-  height: 27rem;
+  width: 85%;
+  height: 21.2rem;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -264,7 +272,6 @@ button {
   overflow: hidden; }
 
 .scrollItem {
-  margin-top: 2rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -286,8 +293,8 @@ button {
 .scroll-img-container img {
   margin: 2rem auto;
   border-radius: 50%;
-  width: 12rem;
-  height: 12rem;
+  width: 9rem;
+  height: 9rem;
   object-fit: cover;
   border: 4px solid #d5b13a; }
 
@@ -295,23 +302,23 @@ button {
   text-transform: uppercase;
   color: #d5b13a;
   margin-bottom: 1rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   letter-spacing: 1.2px;
   font-weight: 500;
   font-family: "Roboto Mono", monospace; }
 .scroll-desc-container p {
   color: #2a2a2a;
   letter-spacing: 0.9px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  width: 85%;
+  width: 75%;
   margin: 0 auto; }
 
 .scroll-prev {
   position: absolute;
   left: 3%;
-  top: 50%;
-  transform: translate(-3%, -50%);
+  top: 30%;
+  transform: translate(-3%, -30%);
   font-size: 2rem;
   color: #8c1212;
   cursor: pointer; }
@@ -319,90 +326,106 @@ button {
 .scroll-next {
   position: absolute;
   right: 3%;
-  top: 50%;
-  transform: translate(3%, -50%);
+  top: 30%;
+  transform: translate(3%, -30%);
   font-size: 2rem;
   color: #8c1212;
   cursor: pointer; }
 
-/*  ::::: Featured Products :::::  */
-.featuredContainer {
-  width: 90%;
+/*  ::::: Promoted Products :::::  */
+.promoContainer {
+  width: 88%;
   margin: 0 auto; }
 
-.featured {
+.promo {
   width: 100%;
   height: 17rem;
   margin: 1.5rem 0rem;
   position: relative; }
-  .featured img {
+  .promo img {
     width: 100%;
     height: 100%;
-    object-fit: cover; }
-  .featured::before {
+    object-fit: cover;
+    border-radius: 0.25rem; }
+  .promo::before {
     content: " ";
     height: 100%;
     width: 100%;
     background: black;
-    opacity: 0.65;
+    opacity: 0.35;
     position: absolute;
     top: 0;
-    left: 0; }
+    left: 0;
+    border-radius: 0.25rem; }
 
-.featured-aceites-info {
-  margin: 0 auto;
+.promo-aceites-info {
   position: absolute;
-  top: 60%;
+  top: 20%;
   left: 20%;
-  transform: translate(-20%, -60%);
-  text-align: left; }
-  .featured-aceites-info h2 {
+  transform: translate(-20%, -20%);
+  text-align: left;
+  height: 80%;
+  margin-top: 2rem; }
+  .promo-aceites-info h2 {
     font-size: 1.6rem;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    font-family: "Roboto Mono", monospace;
-    margin-bottom: 0.25rem;
-    color: #fff; }
-  .featured-aceites-info p {
-    font-size: 1rem;
+    letter-spacing: 1.8px;
+    text-transform: capitalize;
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    margin-bottom: 1.2rem; }
+  .promo-aceites-info p {
+    font-size: 1.1rem;
     letter-spacing: 0.7px;
-    color: #b8c8bf; }
-  .featured-aceites-info button {
-    margin-top: 0.7rem;
-    color: white;
-    letter-spacing: 1px;
+    color: #fafafa; }
+  .promo-aceites-info button {
+    position: absolute;
+    bottom: 20%;
+    color: #8c1212;
+    letter-spacing: 1.3px;
+    background: white;
+    text-transform: uppercase;
+    padding: 0.5rem 1.5rem;
     cursor: pointer;
     transition: 0.25s linear all;
-    background: transparent; }
+    font-weight: 600; }
 
-.featured-vinos-info {
-  margin: 0 auto;
+.promo-vinos-info {
   position: absolute;
-  top: 60%;
-  right: 20%;
-  transform: translate(20%, -60%);
-  text-align: right; }
-  .featured-vinos-info h2 {
+  top: 20%;
+  left: 20%;
+  transform: translate(-20%, -20%);
+  text-align: left;
+  height: 80%;
+  margin-top: 2rem; }
+  .promo-vinos-info h2 {
     font-size: 1.6rem;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    font-family: "Roboto Mono", monospace;
-    margin-bottom: 0.25rem;
-    color: #fff; }
-  .featured-vinos-info p {
-    font-size: 1rem;
+    letter-spacing: 1.8px;
+    text-transform: capitalize;
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    margin-bottom: 1.2rem; }
+  .promo-vinos-info p {
+    font-size: 1.1rem;
     letter-spacing: 0.7px;
-    color: #b8c8bf; }
-  .featured-vinos-info button {
-    margin-top: 0.7rem;
-    color: white;
-    letter-spacing: 1px;
+    color: #fafafa; }
+  .promo-vinos-info button {
+    position: absolute;
+    bottom: 12%;
+    color: #8c1212;
+    letter-spacing: 1.3px;
+    background: white;
+    text-transform: uppercase;
+    padding: 0.5rem 1.5rem;
     cursor: pointer;
     transition: 0.25s linear all;
-    background: transparent; }
+    font-weight: 600; }
 
-/*  ::::: Homepage :::::  */
-/*  ::::: Homepage :::::  */
+/*  ::::: Featured Products :::::  */
+.featured-products {
+  height: 20rem;
+  background: lightgray; }
+
+/*  ::::: Articles :::::  */
 /*  ::::: Homepage :::::  */
 /*  ::::: Homepage :::::  */
 /*  ::::: Homepage :::::  */
