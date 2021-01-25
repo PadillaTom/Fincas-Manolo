@@ -89,6 +89,23 @@ button
 /* --------------------- MAIN APP -------------------- */
 /* --------------------------------------------------- */
 
+/*  ::::: Welcome Page :::::  */
+.intro
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  z-index: 10
+  background: $CTAGold
+.first
+  top: 0
+.second
+  top: 33.3%
+.third
+  top: 66.6%
+
+
 /*  ::::: Error Page :::::  */
 .err-sect
   background: $Gray1
@@ -139,7 +156,8 @@ button
   top: 0
   left: 0
   background: $SecondaryWhite
-  z-index: 2
+  z-index: 5
+  box-shadow: 0 2px 6px 0 #5c5c5c33
 .nav-center
   width: 90%
   margin: 0 auto
@@ -153,7 +171,7 @@ button
   border: none
   color: black
   cursor: pointer
-  font-size: 1.4rem
+  font-size: 1.3rem
 img
   width: 10rem    
 .nav-search
@@ -249,12 +267,67 @@ img
 .home-sect 
   height: auto
 
-/*  ::::: Hero Component :::::  */
+/*  ::::: HeroNew Component :::::  */
 .heroContainer
   max-width: 100%
-  height: 60%
+  height: 65vh
   position: relative
   text-align: center
+  overflow: hidden
+.heroTitle  
+  font-size: 7rem
+  font-weight: 700
+  text-transform: uppercase
+  opacity: 0.07
+  letter-spacing: 3px
+  position: absolute 
+.hero-finc  
+  top: 25%
+  left: 50%
+  transform: translateX(-50%)
+.hero-man
+  bottom: 25%
+  left: 50%
+  transform: translateX(-50%)
+.heroOlive
+  position: absolute
+  top: 0
+  left: 45%
+  transform: translateX(-50%)
+  width: 23rem
+.heroCta
+  position: absolute
+  bottom: 25%
+  left: 10%
+  padding: 0.3rem 2rem
+  border-radius: 0.5rem
+  background: $CTAGold
+  font-family: $FontTitles
+  text-transform: uppercase
+  font-size: 1.2rem
+  color: $MainWhite
+  letter-spacing: 1.3px
+  z-index: 2
+.heroDesc
+  position: absolute
+  bottom: 15%
+  right: 0
+  h4
+    margin-bottom: 0.25rem
+    font-size: 1.5rem
+    font-family: $FontTitles
+    letter-spacing: 1px
+
+  p
+    font-size: 0.9rem
+    color: $Gray1
+
+/*  ::::: Hero Component :::::  */
+// .heroContainer
+//   max-width: 100%
+//   height: 60%
+//   position: relative
+//   text-align: center
 .hero-bg-img  
   width: 100% 
   height: 100%

@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars } from 'react-icons/fa';
-import { AiOutlineClose, AiOutlineSearch } from 'react-icons/ai';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { AiOutlineSearch } from 'react-icons/ai';
+import { TweenMax, Expo } from 'gsap';
 // Data:
-import FMLogoPNG from '../Assets/FMLogoPNG.png';
 import FMHoriz from '../Assets/FMHoriz.png';
 // Context:
 import { useProductsContext } from '../Context/products_context';
 
 const Navbar = () => {
   const { openSidebar, closeSidebar, isSidebarOpen } = useProductsContext();
+  // GSAP:
+  useEffect(() => {
+    TweenMax.from('.navContainer', 1.5, {
+      delay: 0.6,
+      top: '-100%',
+      ease: Expo.easeOut,
+    });
+  }, []);
 
   return (
     <>
@@ -19,7 +27,10 @@ const Navbar = () => {
           <div className='nav-header'>
             <button className='nav-toggle' type='button'>
               {isSidebarOpen ? (
-                <AiOutlineClose onClick={closeSidebar}></AiOutlineClose>
+                <FaTimes
+                  onClick={closeSidebar}
+                  style={{ fontSize: '1.5rem' }}
+                ></FaTimes>
               ) : (
                 <FaBars onClick={openSidebar}></FaBars>
               )}

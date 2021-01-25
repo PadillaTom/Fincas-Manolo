@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { TweenMax, Expo } from 'gsap';
 // Components:
 import {
-  Hero,
+  HeroNew,
   Services,
   PromoProducts,
   FeaturedProducts,
@@ -9,13 +10,23 @@ import {
 } from '../Components';
 
 const Homepage = () => {
+  // GSAP:
+  useEffect(() => {
+    TweenMax.from('.main-delay', 1, {
+      delay: 2.5,
+      ease: Expo.easeOut,
+      opacity: 0,
+    });
+  }, []);
   return (
     <div className='section home-sect'>
-      <Hero></Hero>
-      <Services></Services>
-      <PromoProducts></PromoProducts>
-      <FeaturedProducts></FeaturedProducts>
-      <Articles></Articles>
+      <div className='main-delay'>
+        <HeroNew></HeroNew>
+        <Services></Services>
+        <PromoProducts></PromoProducts>
+        <FeaturedProducts></FeaturedProducts>
+        <Articles></Articles>
+      </div>
     </div>
   );
 };
