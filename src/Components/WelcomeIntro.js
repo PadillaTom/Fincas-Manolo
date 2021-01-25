@@ -15,7 +15,7 @@ const WelcomeIntro = () => {
         ease: Expo.easeInOut,
       })
       .to('.third', 0.6, {
-        delay: -0.2,
+        delay: -0.3,
         left: '-100%',
         ease: Expo.easeInOut,
       });

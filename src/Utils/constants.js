@@ -98,6 +98,7 @@ export const products = [
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
+    category: 'secos',
   },
   {
     id: 2,
@@ -111,6 +112,7 @@ Otro punto destacable es su contenido en fibra. Es ideal para estimular los movi
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
+    category: 'secos',
   },
   {
     id: 3,
@@ -125,6 +127,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
+    category: 'secos',
   },
   {
     id: 4,
@@ -137,6 +140,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
+    category: 'secos',
   },
   {
     id: 5,
@@ -149,6 +153,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
+    category: 'secos',
   },
   {
     id: 6,
@@ -162,6 +167,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
+    category: 'aceites',
   },
   {
     id: 7,
@@ -175,6 +181,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
+    category: 'aceites',
   },
   {
     id: 8,
@@ -188,6 +195,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
+    category: 'aceites',
   },
   {
     id: 9,
@@ -201,6 +209,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
+    category: 'aceites',
   },
   {
     id: 10,
@@ -214,6 +223,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
+    category: 'aceites',
   },
   {
     id: 11,
@@ -227,6 +237,7 @@ Las aceitunas una buena fuente de fibra, así que también ayudan al correcto fu
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
+    category: 'olives',
   },
   {
     id: 12,
@@ -240,9 +251,37 @@ Las aceitunas una buena fuente de fibra, así que también ayudan al correcto fu
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
+    category: 'olives',
   },
 ];
 
-// ---> PRODUCTO INDIVIDUAL <---
+// ---> Products Category <---
+export const categories = [
+  {
+    id: 1,
+    imgUrl:
+      'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/FilterOils.png?alt=media&token=adedb7ec-2dd5-4aa6-9fa2-11dd0ab454f3',
+    name: 'Aceites',
+  },
+  {
+    id: 2,
+    imgUrl:
+      'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/FilterOlives.png?alt=media&token=7f9618c7-6739-4170-b11e-9b6ea070b247',
+    name: 'Frutos Secos',
+  },
+  {
+    id: 3,
+    imgUrl:
+      'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/FilterAlmonds.png?alt=media&token=047b1e6f-8f76-45df-9289-e17d785addbc',
+
+    name: 'Aceitunas',
+  },
+  {
+    id: 4,
+    imgUrl:
+      'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/FilterWines.png?alt=media&token=ba178e6f-fb0c-431b-9928-dea1ab59f926',
+    name: 'Vinos',
+  },
+];
 // ---> CONTACTO <---
 // ---> GALERIA <---
