@@ -5,10 +5,10 @@ import { categories } from '../Utils/constants';
 const ProductsCategory = () => {
   // Data:
   const [myCategories, setCategories] = useState([]);
-  const [isActive, setIsActive] = useState(false);
   useEffect(() => {
     setCategories(categories);
   }, []);
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <div className='filtros-icons'>
@@ -17,7 +17,9 @@ const ProductsCategory = () => {
         return (
           <div
             key={id}
-            className={`${isActive ? 'single-icon activeCat' : 'single-icon'}`}
+            className={`${
+              isActive ? 'single-icon activeCat' : 'single-icon inactiveCat'
+            }`}
             onClick={() => {
               setIsActive(!isActive);
             }}
