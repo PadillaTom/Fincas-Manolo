@@ -16,7 +16,7 @@ $MainWhite: #fff
 $SecondaryWhite: #fafafa
 $MainColor: #d5b13a
 $MainBlack: #000
-$Gray1: #2b2828
+$Gray1: #828282
 /* Font Colors */
 $TitleColor: #2a2a2a
 $SubtitleColor2: #8c1212
@@ -66,7 +66,16 @@ button
   width: 90%
   height: 100%
   margin: 0 auto
-
+.section-title
+  font-family: $FontTitles
+  color: $SubtitleColor2
+  letter-spacing: 0.7px
+  span
+    color: $Gray1
+    letter-spacing: 1px
+    font-family: $FontMain
+    opacity: 0.4
+    margin-left: 1rem
 
 /* CTA */
 .primary-cta    
@@ -491,7 +500,7 @@ img
 /*  ::::: Featured Products :::::  */
 .featured-products 
   height: 20rem
-  background: lightgray 
+  background: $MainWhite 
 
 /*  ::::: Articles :::::  */
 

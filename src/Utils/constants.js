@@ -97,6 +97,7 @@ export const products = [
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/1%20Nuez%20pecan%20x500g.jpg?alt=media&token=506bcc7c-1897-4b58-8638-06e6f482604b',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
+    featured: false,
   },
   {
     id: 2,
@@ -109,6 +110,7 @@ Otro punto destacable es su contenido en fibra. Es ideal para estimular los movi
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/1Almendras%20non%20pareil%20x500.jpg?alt=media&token=d05471a3-2069-4068-9867-57332d1f78fc',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
+    featured: false,
   },
   {
     id: 3,
@@ -122,6 +124,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/1Casta%C3%B1as%20Caju%20x500gr.jpg?alt=media&token=39819c2f-044b-4ba6-9eb4-98537b231c78',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
+    featured: false,
   },
   {
     id: 4,
@@ -133,6 +136,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/1Nueces%20Chandler%20extra%20lightpeladas%20x500.jpg?alt=media&token=11858b68-2cd5-4120-bb6b-66c083d09fa6',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
+    featured: false,
   },
   {
     id: 5,
@@ -144,6 +148,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/1Pasas%20de%20uwu%20x500.jpg?alt=media&token=1e306046-3cc3-4a61-880a-0d28ac22e9c7',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
+    featured: false,
   },
   {
     id: 6,
@@ -156,6 +161,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/2aceite%201l.jpg?alt=media&token=85b31890-c418-450a-a185-1f3b9ef63d0e',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
+    featured: false,
   },
   {
     id: 7,
@@ -168,6 +174,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/2aceite%20250.jpg?alt=media&token=527dc964-2d3b-4639-857c-4d007215e15d',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
+    featured: false,
   },
   {
     id: 8,
@@ -180,6 +187,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/2aceite%202l.jpg?alt=media&token=3027ef17-c4a4-44d2-a81a-b7c7b8b5abad',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
+    featured: false,
   },
   {
     id: 9,
@@ -192,6 +200,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/2aceite%20500.jpg?alt=media&token=a5fdb001-912a-4bea-9911-14ecfe8c4018',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
+    featured: false,
   },
   {
     id: 10,
@@ -204,6 +213,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/2aceite%205l.jpg?alt=media&token=526b8996-e7f9-440d-adc7-4d2bf0cb85fa',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
+    featured: false,
   },
   {
     id: 11,
@@ -211,11 +221,12 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     name: 'Aceitunas Negras en Aceite y Laurel',
     desc: `Las aceitunas son muy ricas en ácidos grasos Omega 3 y Omega 6, esenciales para mantener una buena salud cardiovascular. Aportan vitaminas, y las negras tienen mayor cantidad de hierro. Además, contienen otras sustancias antioxidantes que te ayudarán a reforzar el sistema inmunitario.
 Las aceitunas una buena fuente de fibra, así que también ayudan al correcto funcionamiento del aparato digestivo.`,
-    peso: '500 grs. y 360 grs.',
+    peso: ['500 Grs.', '360 Grs.'],
     imgUrl:
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/3Aceitunas%20negras%20en%20aceite%20y%20laurel%20x360.jpg?alt=media&token=886b5eaf-95b7-4204-8098-cc106dede044',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
+    featured: false,
   },
   {
     id: 12,
@@ -223,11 +234,12 @@ Las aceitunas una buena fuente de fibra, así que también ayudan al correcto fu
     name: 'Aceitunas Verdes en Salmuera y Laurel',
     desc: `Las aceitunas son muy ricas en ácidos grasos Omega 3 y Omega 6, esenciales para mantener una buena salud cardiovascular. Aportan vitaminas, y las negras tienen mayor cantidad de hierro. Además, contienen otras sustancias antioxidantes que te ayudarán a reforzar el sistema inmunitario.
 Las aceitunas una buena fuente de fibra, así que también ayudan al correcto funcionamiento del aparato digestivo.`,
-    peso: '500 grs. y 360 grs.',
+    peso: ['500 Grs.', '360 Grs.'],
     imgUrl:
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/3Aceitunas%20verdes%20en%20salmuera%20x500.jpg?alt=media&token=7f7ba6b2-f10d-4785-952b-954a98e42945',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
+    featured: false,
   },
 ];
 

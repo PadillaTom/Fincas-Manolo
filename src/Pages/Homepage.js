@@ -13,9 +13,9 @@ const Homepage = () => {
   return (
     <div className='section home-sect'>
       <HeroNew></HeroNew>
-      {/* <Services></Services> */}
-      <PromoProducts></PromoProducts>
       <FeaturedProducts></FeaturedProducts>
+      <PromoProducts></PromoProducts>
+      <Services></Services>
       <Articles></Articles>
     </div>
   );

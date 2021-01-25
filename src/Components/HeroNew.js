@@ -7,19 +7,22 @@ const HeroNew = () => {
   // GSAP:
   useEffect(() => {
     const tl = new TimelineMax();
-    tl.from('.hero-finc', 1, {
-      delay: 0.8,
+
+    tl.from('.hero-finc', 0.7, {
+      delay: 1.1,
       x: '170%',
     })
-      .from('.hero-man', 1, {
+      .from('.hero-man', 0.6, {
         x: '-120%',
       })
       .from('.heroOlive', 1, {
-        y: '-150%',
+        delay: 0,
+        y: '-120%',
         ease: Power3.easeInOut,
       })
       .from('.heroDesc', 1.2, {
         opacity: 0,
+        filter: 'blur(0.1rem)',
       });
   }, []);
 

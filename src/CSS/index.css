@@ -35,6 +35,17 @@ button {
   height: 100%;
   margin: 0 auto; }
 
+.section-title {
+  font-family: "Playfair Display", serif;
+  color: #8c1212;
+  letter-spacing: 0.7px; }
+  .section-title span {
+    color: #828282;
+    letter-spacing: 1px;
+    font-family: "Roboto Mono", monospace;
+    opacity: 0.4;
+    margin-left: 1rem; }
+
 /* CTA */
 .primary-cta {
   padding: 0.6rem 2.3rem;
@@ -76,7 +87,7 @@ button {
 
 /*  ::::: Error Page :::::  */
 .err-sect {
-  background: #2b2828; }
+  background: #828282; }
 
 .error-container {
   text-align: center;
@@ -108,7 +119,7 @@ button {
   color: white; }
   .error-cta:hover {
     background: white;
-    color: #2b2828; }
+    color: #828282; }
   .error-cta p {
     z-index: 1;
     letter-spacing: 1px;
@@ -193,7 +204,7 @@ img {
   margin: 1.25rem 0rem; }
   .side-help h2 {
     letter-spacing: 1px;
-    color: #2b2828;
+    color: #828282;
     margin-bottom: 0.25rem;
     font-size: 1.5rem; }
 
@@ -218,7 +229,7 @@ img {
   margin: 1.25rem 0rem; }
   .side-social h2 {
     letter-spacing: 1px;
-    color: #2b2828;
+    color: #828282;
     margin-bottom: 0.25rem;
     font-size: 1.5rem; }
 
@@ -482,7 +493,7 @@ img {
 /*  ::::: Featured Products :::::  */
 .featured-products {
   height: 20rem;
-  background: lightgray; }
+  background: #fff; }
 
 /*  ::::: Articles :::::  */
 /*  ::::: Homepage :::::  */
@@ -516,7 +527,7 @@ img {
   padding: 1rem 0rem;
   margin: 0 auto;
   text-align: center;
-  background: #2b2828;
+  background: #828282;
   color: #c5c5c5;
   letter-spacing: 1px; }
 
