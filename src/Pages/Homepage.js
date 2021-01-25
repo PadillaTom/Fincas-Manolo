@@ -4,6 +4,7 @@ import React from 'react';
 import {
   HeroNew,
   Services,
+  ServicesNew,
   PromoProducts,
   FeaturedProducts,
   Articles,
@@ -15,7 +16,8 @@ const Homepage = () => {
       <HeroNew></HeroNew>
       <FeaturedProducts></FeaturedProducts>
       <PromoProducts></PromoProducts>
-      <Services></Services>
+      <ServicesNew></ServicesNew>
+      {/* <Services></Services> */}
       <Articles></Articles>
     </div>
   );

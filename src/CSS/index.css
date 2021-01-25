@@ -404,6 +404,34 @@ img {
   color: #8c1212;
   cursor: pointer; }
 
+/*  ::::: Services NEW :::::  */
+.servicesContainer {
+  padding: 1.5rem 0rem; }
+
+.serviciosArtContainer {
+  margin-top: 1.5rem; }
+
+.singleServ-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92%;
+  margin: 0 auto;
+  margin-bottom: 1rem; }
+
+.serv-der h4 {
+  color: #d5b13a;
+  letter-spacing: 1.2px;
+  margin-bottom: 0.3rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500; }
+.serv-der p {
+  font-family: #828282;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem; }
+
 /*  ::::: Promoted Products :::::  */
 .promoContainer {
   width: 88%;
