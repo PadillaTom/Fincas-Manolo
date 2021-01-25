@@ -3,7 +3,6 @@ import React from 'react';
 // Components:
 import {
   HeroNew,
-  Services,
   ServicesNew,
   PromoProducts,
   FeaturedProducts,
@@ -17,7 +16,7 @@ const Homepage = () => {
       <FeaturedProducts></FeaturedProducts>
       <PromoProducts></PromoProducts>
       <ServicesNew></ServicesNew>
-      {/* <Services></Services> */}
+
       <Articles></Articles>
     </div>
   );

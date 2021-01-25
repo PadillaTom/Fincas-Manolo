@@ -4,7 +4,6 @@ import Loading from './Loading';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import HeroNew from './HeroNew';
-import Services from './Services';
 import ServicesNew from './ServicesNew';
 import PromoProducts from './PromoProducts';
 import FeaturedProducts from './FeaturedProducts';
@@ -18,7 +17,6 @@ export {
   Navbar,
   Sidebar,
   HeroNew,
-  Services,
   ServicesNew,
   PromoProducts,
   FeaturedProducts,
