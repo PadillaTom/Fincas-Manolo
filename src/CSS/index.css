@@ -245,7 +245,7 @@ img {
 /*  ::::: HeroNew Component :::::  */
 .heroContainer {
   max-width: 100%;
-  height: 65vh;
+  height: 70vh;
   position: relative;
   text-align: center;
   overflow: hidden; }
@@ -255,80 +255,62 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   opacity: 0.07;
-  letter-spacing: 3px;
   position: absolute; }
 
 .hero-finc {
-  top: 25%;
-  left: 50%;
-  transform: translateX(-50%); }
+  top: 28%;
+  left: -15%;
+  transform: translateX(-15%); }
 
 .hero-man {
-  bottom: 25%;
-  left: 50%;
-  transform: translateX(-50%); }
+  bottom: 28%;
+  right: -50%; }
 
 .heroOlive {
   position: absolute;
   top: 0;
   left: 45%;
   transform: translateX(-50%);
-  width: 23rem; }
-
-.heroCta {
-  position: absolute;
-  bottom: 25%;
-  left: 10%;
-  padding: 0.3rem 2rem;
-  border-radius: 0.5rem;
-  background: #d5b13a;
-  font-family: "Playfair Display", serif;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  color: #fff;
-  letter-spacing: 1.3px;
-  z-index: 2; }
+  width: 24rem; }
 
 .heroDesc {
   position: absolute;
   bottom: 15%;
-  right: 0; }
+  width: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 1.5rem 0rem; }
   .heroDesc h4 {
     margin-bottom: 0.25rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: "Playfair Display", serif;
-    letter-spacing: 1px; }
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: white;
+    font-weight: 500; }
   .heroDesc p {
-    font-size: 0.9rem;
-    color: #2b2828; }
-
-/*  ::::: Hero Component :::::  */
-.hero-bg-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-.hero-info-container {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -80%);
-  background: #ffffff91;
-  width: 100%;
-  padding: 1.5rem 0rem; }
-  .hero-info-container h2 {
-    color: #2a2a2a;
-    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
     letter-spacing: 1px;
-    font-weight: 600;
-    font-size: 2rem;
-    margin-bottom: 0.25rem; }
-  .hero-info-container p {
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.9px;
-    padding-bottom: 1.5rem;
-    color: #0e0808; }
+    color: white; }
+
+.heroCta {
+  margin-top: 1.5rem;
+  padding: 0.3rem 2rem;
+  border-radius: 0.2rem;
+  background: #fff;
+  border: 1.5px solid black;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.25s linear all;
+  z-index: 2; }
+  .heroCta:hover {
+    border: 1.5px solid #8c1212;
+    color: #8c1212; }
 
 /*  ::::: Services :::::  */
 .services-title {
