@@ -24,7 +24,7 @@ const FeaturedProducts = () => {
     <section className='featured-products'>
       <div className='section-center'>
         <h2 className='section-title'>
-          Top Featured <span>Productos</span>
+          Categorías <span>Productos</span>
         </h2>
       </div>
       <ProductsCategory></ProductsCategory>

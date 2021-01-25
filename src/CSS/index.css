@@ -38,7 +38,8 @@ button {
   font-family: "Playfair Display", serif;
   color: #8c1212;
   letter-spacing: 0.7px;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-transform: uppercase; }
   .section-title span {
     color: #828282;
     letter-spacing: 1.5px;
@@ -257,7 +258,7 @@ img {
 /*  ::::: HeroNew Component :::::  */
 .heroContainer {
   max-width: 100%;
-  height: 70vh;
+  height: 73vh;
   position: relative;
   text-align: center;
   overflow: hidden; }
@@ -493,25 +494,31 @@ img {
 
 /*  ::::: Featured Products :::::  */
 .featured-products {
-  height: 20rem;
-  background: #fff; }
+  height: auto;
+  background: #fff;
+  padding-bottom: 1.7rem; }
 
 .filtros-icons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   place-items: center;
   justify-content: space-around;
-  gap: 0.3rem;
+  gap: 1.5rem 0.5rem;
   width: 90%;
   height: auto;
-  margin: 0 auto; }
+  margin: 1.2rem auto; }
 
 .single-icon {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   display: flex;
   flex-direction: column;
-  position: relative; }
+  position: relative;
+  transition: 0.25s linear all;
+  cursor: pointer; }
+  .single-icon:hover p {
+    color: #8c1212; }
   .single-icon img {
     margin: 0 auto;
     width: 100%;
@@ -522,16 +529,13 @@ img {
   .single-icon p {
     text-align: center;
     margin-top: 0.2rem;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     white-space: nowrap;
-    letter-spacing: 0.7px;
-    font-family: "Raleway", sans-serif; }
-
-.inactiveCat img {
-  filter: grayscale(100%); }
-
-.activeCat img {
-  filter: grayscale(0); }
+    letter-spacing: 0.5px;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    color: #b8c8bf;
+    transition: 0.25s linear all; }
 
 /*  ::::: Articles :::::  */
 /*  ::::: Homepage :::::  */

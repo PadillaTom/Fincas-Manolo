@@ -12,18 +12,10 @@ const ProductsCategory = () => {
 
   return (
     <div className='filtros-icons'>
-      {myCategories.map((cat, catIndex) => {
+      {myCategories.map((cat) => {
         const { imgUrl, id, name } = cat;
         return (
-          <div
-            key={id}
-            className={`${
-              isActive ? 'single-icon activeCat' : 'single-icon inactiveCat'
-            }`}
-            onClick={() => {
-              setIsActive(!isActive);
-            }}
-          >
+          <div key={id} className='single-icon'>
             <img src={imgUrl} alt={name} />
             <p>{name}</p>
           </div>
