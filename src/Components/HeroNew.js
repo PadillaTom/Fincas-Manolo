@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { TimelineMax, Power3 } from 'gsap';
 
 const HeroNew = () => {
@@ -33,7 +34,9 @@ const HeroNew = () => {
       <div className='heroDesc'>
         <h4>Elevada Altitud</h4>
         <p>Aceites y Vinos Premium</p>
-        <button className='heroCta'>Explorar</button>
+        <Link to='/productos'>
+          <button className='heroCta'>Explorar</button>
+        </Link>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PromoProducts = () => {
   const olivaImage =
@@ -16,7 +17,9 @@ const PromoProducts = () => {
             Nuestro aceite de oliva Premium está compuesto de un blend de
             nuestras mejores variedades.
           </p>
-          <button type='button'>Ver Más</button>
+          <Link to='/el-olivar'>
+            <button type='button'>Ver Más</button>
+          </Link>
         </div>
       </div>
       <div className='promo'>
@@ -27,7 +30,9 @@ const PromoProducts = () => {
             Producir vinos de calidad en las condiciones generadas por el clima
             extremo de la región es un verdadero desafío.
           </p>
-          <button type='button'>Ver Más</button>
+          <Link to='/vinos'>
+            <button type='button'>Ver Más</button>
+          </Link>
         </div>
       </div>
     </div>

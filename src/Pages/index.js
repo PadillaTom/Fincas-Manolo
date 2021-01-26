@@ -6,6 +6,9 @@ import OlivarPage from './OlivarPage';
 import ProductsPage from './ProductsPage';
 import ContactPage from './ContactPage';
 import GalleryPage from './GalleryPage';
+import VinosPage from './VinosPage';
+import FrutosPage from './FrutosPage';
+
 // Pages EXPORTS:
 export {
   Home,
@@ -15,4 +18,6 @@ export {
   ProductsPage,
   ContactPage,
   GalleryPage,
+  VinosPage,
+  FrutosPage,
 };

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 // Data:
 import { categories } from '../Utils/constants';
 // Gsap:
@@ -26,11 +27,13 @@ const ProductsCategories = () => {
       </div>
       <div className='filtros-icons'>
         {myCategories.map((cat) => {
-          const { imgUrl, id, name } = cat;
+          const { imgUrl, id, name, slug } = cat;
           return (
-            <div key={id} className='single-icon'>
-              <img src={imgUrl} alt={name} />
-              <p>{name}</p>
+            <div className='single-icon' key={id}>
+              <Link to={slug}>
+                <img src={imgUrl} alt={name} />
+                <p>{name}</p>
+              </Link>
             </div>
           );
         })}

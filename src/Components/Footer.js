@@ -16,7 +16,7 @@ const Footer = () => {
           <div className='footer-section'>
             <h2>Mapa del sitio</h2>
             <hr />
-            {/* Links */}
+
             <ul className='footer-links'>
               {links.map((link) => {
                 const { id, name, url } = link;
@@ -28,6 +28,7 @@ const Footer = () => {
               })}
             </ul>
           </div>
+
           <div className='footer-section'>
             <h2>Contacto</h2>
             <hr />
@@ -38,6 +39,7 @@ const Footer = () => {
               <p>+41 79 400 26 93</p>
             </div>
           </div>
+
           <div className='footer-section'>
             <h2>Redes Sociales</h2>
             <hr />

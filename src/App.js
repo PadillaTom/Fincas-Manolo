@@ -12,6 +12,8 @@ import {
   ProductsPage,
   ContactPage,
   GalleryPage,
+  VinosPage,
+  FrutosPage,
 } from './Pages';
 // Helpers
 import ScrollToTop from './Utils/helpers';
@@ -42,6 +44,12 @@ function App() {
           </Route>
           <Route path='/gallery'>
             <GalleryPage></GalleryPage>
+          </Route>
+          <Route path='/vinos'>
+            <VinosPage></VinosPage>
+          </Route>
+          <Route path='/frutos-secos'>
+            <FrutosPage></FrutosPage>
           </Route>
           <Route path='*'>
             <ErrorPage></ErrorPage>

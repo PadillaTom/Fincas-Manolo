@@ -274,25 +274,29 @@ export const categories = [
     imgUrl:
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/FilterOils.png?alt=media&token=adedb7ec-2dd5-4aa6-9fa2-11dd0ab454f3',
     name: 'Aceites',
+    slug: '/el-olivar',
   },
   {
     id: 2,
     imgUrl:
-      'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/FilterOlives.png?alt=media&token=7f9618c7-6739-4170-b11e-9b6ea070b247',
+      'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/FilterAlmonds.png?alt=media&token=047b1e6f-8f76-45df-9289-e17d785addbc',
     name: 'Frutos Secos',
+    slug: '/frutos-secos',
   },
   {
     id: 3,
     imgUrl:
-      'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/FilterAlmonds.png?alt=media&token=047b1e6f-8f76-45df-9289-e17d785addbc',
+      'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/FilterOlives.png?alt=media&token=7f9618c7-6739-4170-b11e-9b6ea070b247',
 
     name: 'Aceitunas',
+    slug: '/el-olivar',
   },
   {
     id: 4,
     imgUrl:
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/FilterWines.png?alt=media&token=ba178e6f-fb0c-431b-9928-dea1ab59f926',
     name: 'Vinos',
+    slug: '/vinos',
   },
 ];
 // ---> CONTACTO <---
