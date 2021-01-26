@@ -456,21 +456,25 @@ img {
   place-items: center;
   justify-content: space-around;
   gap: 1.5rem 0.5rem;
-  width: 90%;
-  height: auto;
+  width: 100%;
   margin: 1.2rem auto; }
 
 .single-icon {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 70%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   position: relative;
   transition: 0.25s linear all;
   cursor: pointer; }
+  .single-icon a {
+    width: 100%;
+    height: 100%; }
   .single-icon:hover p {
     color: #8c1212; }
   .single-icon img {
+    flex: 1;
     margin: 0 auto;
     width: 100%;
     height: 100%;
