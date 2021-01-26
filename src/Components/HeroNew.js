@@ -22,7 +22,6 @@ const HeroNew = () => {
       })
       .from('.heroDesc', 1.2, {
         opacity: 0,
-        filter: 'blur(0.1rem)',
       });
   }, []);
 

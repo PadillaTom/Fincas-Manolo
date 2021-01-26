@@ -1,22 +1,19 @@
-import React from 'react';
-import { ProductsCategory } from '.';
-// Context:
-import { useProductsContext } from '../Context/products_context';
+import React, { useState, useEffect } from 'react';
+// Data:
+import { categories } from '../Utils/constants';
 // Gsap:
 import { TweenMax } from 'gsap';
 
 const FeaturedProducts = () => {
-  // Context:
-  const {
-    products_loading: loading,
-    products_error: error,
-    featured_products: featured,
-    all_products: products,
-  } = useProductsContext();
+  // Data:
+  const [myCategories, setCategories] = useState([]);
+  useEffect(() => {
+    setCategories(categories);
+  }, []);
+
   // GSAP:
   TweenMax.from('.featured-products', 0.5, {
     delay: 2.5,
-    y: '+50%',
     opacity: 0,
   });
 
@@ -27,8 +24,17 @@ const FeaturedProducts = () => {
           Categorías <span>Productos</span>
         </h2>
       </div>
-      <ProductsCategory></ProductsCategory>
-      <div className='products-display'></div>
+      <div className='filtros-icons'>
+        {myCategories.map((cat) => {
+          const { imgUrl, id, name } = cat;
+          return (
+            <div key={id} className='single-icon'>
+              <img src={imgUrl} alt={name} />
+              <p>{name}</p>
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 };

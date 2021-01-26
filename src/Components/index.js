@@ -7,7 +7,6 @@ import HeroNew from './HeroNew';
 import ServicesNew from './ServicesNew';
 import PromoProducts from './PromoProducts';
 import FeaturedProducts from './FeaturedProducts';
-import ProductsCategory from './ProductsCategory';
 import Articles from './Articles';
 import Footer from './Footer';
 // Components  EXPORTS:
@@ -20,7 +19,6 @@ export {
   ServicesNew,
   PromoProducts,
   FeaturedProducts,
-  ProductsCategory,
   Articles,
   Footer,
 };

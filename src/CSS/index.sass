@@ -281,7 +281,7 @@ img
 /*  ::::: HeroNew Component :::::  */
 .heroContainer
   max-width: 100%
-  height: 73vh
+  height: 80vh
   position: relative
   text-align: center
   overflow: hidden
@@ -303,7 +303,7 @@ img
   top: 0
   left: 45%
   transform: translateX(-50%)
-  width: 24rem
+  width: 29rem
 .heroDesc
   position: absolute
   bottom: 15% 
@@ -341,79 +341,6 @@ img
   &:hover
     border: 1.5px solid $SubtitleColor2
     color: $SubtitleColor2
-
-/*  ::::: Services :::::  */
-.services-title
-  font-family: $FontTitles
-  color: $TitleColor
-  font-size: 1.8rem
-  letter-spacing: 1.2px
-  text-align: center
-  margin-top: 1.5rem
-.scrollContainer
-  width: 85%
-  height: 21.2rem
-  margin: 0 auto
-  text-align: center
-  position: relative
-  display: flex
-  overflow: hidden
-.scrollItem
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  transition: $MainTrans
-  opacity: 0
-.activeSlide
-  opacity: 1
-  transform: translateX(0)
-.lastSlide
-  transform: translateX(-100%)
-.nextSlide  
-  transform: translateX(100%)
-.scroll-img-container  
-  img
-    margin: 2rem auto
-    border-radius: 50%    
-    width: 9rem
-    height: 9rem
-    object-fit: cover
-    border: 4px solid $MainColor
-.scroll-desc-container
-  h4
-    text-transform: uppercase
-    color: $MainColor
-    margin-bottom: 1rem
-    font-size: 1.5rem
-    letter-spacing: 1.2px
-    font-weight: 500
-    font-family: $FontMain
-  p
-    color: $TitleColor
-    letter-spacing: 0.9px
-    font-size: 1.1rem
-    font-weight: 500   
-    width: 75%
-    margin: 0 auto
-.scroll-prev
-  position: absolute
-  left: 3%
-  top: 30%
-  transform: translate(-3%,-30%)
-  font-size: 2rem
-  color: $SubtitleColor2
-  cursor: pointer  
-.scroll-next
-  position: absolute
-  right: 3%
-  top: 30%
-  transform: translate(3%,-30%)  
-  font-size: 2rem
-  color: $SubtitleColor2
-  cursor: pointer  
-  
 
 /*  ::::: Services NEW :::::  */
 .servicesContainer
@@ -531,6 +458,7 @@ img
   height: auto
   background: $MainWhite  
   padding-bottom: 1.7rem
+  opacity: 1
 .filtros-icons  
   display: grid
   grid-template-columns: repeat(2, 1fr)

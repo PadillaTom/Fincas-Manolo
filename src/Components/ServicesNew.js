@@ -19,7 +19,7 @@ const ServicesNew = () => {
         {myServices.map((serv) => {
           const { id, name, desc, imgUrl } = serv;
           return (
-            <article className='singleServ-container'>
+            <article className='singleServ-container' key={id}>
               <div className='serv-izq'>
                 <img src={imgUrl} alt={name} />
               </div>
