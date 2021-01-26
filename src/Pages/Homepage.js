@@ -6,8 +6,9 @@ import {
   ServicesNew,
   PromoProducts,
   ProductsCategories,
-  Articles,
   ProductsFeatured,
+  Articles,
+  Reviews,
 } from '../Components';
 
 const Homepage = () => {
@@ -16,9 +17,10 @@ const Homepage = () => {
       <HeroNew></HeroNew>
       <ProductsCategories></ProductsCategories>
       <PromoProducts></PromoProducts>
-      <ServicesNew></ServicesNew>
       <ProductsFeatured></ProductsFeatured>
+      <ServicesNew></ServicesNew>
       <Articles></Articles>
+      <Reviews></Reviews>
     </div>
   );
 };

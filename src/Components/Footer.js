@@ -4,8 +4,6 @@ import {
   AiOutlineFacebook,
   AiOutlineInstagram,
   AiOutlineTwitter,
-  AiOutlineMail,
-  AiOutlinePhone,
 } from 'react-icons/ai';
 // Data:
 import { links } from '../Utils/constants';
@@ -15,8 +13,9 @@ const Footer = () => {
     <footer className='footerContainer'>
       <article className='footer-center'>
         <div className='footer-light'>
-          <div className='footer-site-map'>
+          <div className='footer-section'>
             <h2>Mapa del sitio</h2>
+            <hr />
             {/* Links */}
             <ul className='footer-links'>
               {links.map((link) => {
@@ -29,23 +28,19 @@ const Footer = () => {
               })}
             </ul>
           </div>
-          <div className='footer-contact'>
+          <div className='footer-section'>
             <h2>Contacto</h2>
+            <hr />
             <div className='footer-contact-item'>
-              <div className='footer-contact-icon'>
-                <AiOutlineMail></AiOutlineMail>
-              </div>
               <p>Fincas-Manolo@email.com</p>
             </div>
             <div className='footer-contact-item'>
-              <div className='footer-contact-icon'>
-                <AiOutlinePhone></AiOutlinePhone>
-              </div>
               <p>+41 79 400 26 93</p>
             </div>
           </div>
-          <div className='footer-social'>
+          <div className='footer-section'>
             <h2>Redes Sociales</h2>
+            <hr />
             <div className='footer-social-icons'>
               <AiOutlineFacebook></AiOutlineFacebook>
               <AiOutlineInstagram></AiOutlineInstagram>

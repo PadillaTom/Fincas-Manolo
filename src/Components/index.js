@@ -11,6 +11,7 @@ import ServicesNew from './ServicesNew';
 import ProductsFeatured from './ProductsFeatured';
 import ProductsCard from './ProductsCard';
 import Articles from './Articles';
+import Reviews from './Reviews';
 import Footer from './Footer';
 // Components  EXPORTS:
 export {
@@ -26,5 +27,6 @@ export {
   ProductsFeatured,
   ProductsCard,
   Articles,
+  Reviews,
   Footer,
 };
