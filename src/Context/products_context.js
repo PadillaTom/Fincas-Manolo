@@ -1,4 +1,4 @@
-import React, { useContext, useReducer, useEffect, useState } from 'react';
+import React, { useContext, useReducer, useEffect } from 'react';
 import reducer from '../Reducers/products_reducer';
 import {
   SIDEBAR_OPEN,
@@ -8,7 +8,7 @@ import {
   GET_PRODUCTS_ERROR,
 } from '../actions';
 // Data:
-import { products } from '../Utils/constants';
+import { productos } from '../Utils/constants';
 
 // STATE:
 const initialState = {
@@ -24,7 +24,6 @@ const ProductsContext = React.createContext();
 export const ProductsProvider = ({ children }) => {
   //  ----> REDUCERS <----
   const [state, dispatch] = useReducer(reducer, initialState);
-  const [myProducts, setMyProducts] = useState([]);
   // :: Sidebar ::
   const openSidebar = () => {
     dispatch({ type: SIDEBAR_OPEN });
@@ -32,12 +31,12 @@ export const ProductsProvider = ({ children }) => {
   const closeSidebar = () => {
     dispatch({ type: SIDEBAR_CLOSE });
   };
+
   // :: All Products ::  --> Normally we would use AXIOS and an API
-  const fetchProducts = (products) => {
+  const fetchProducts = (productos) => {
     dispatch({ type: GET_PRODUCTS_BEGIN });
     try {
-      setMyProducts(products);
-      const products_list = myProducts;
+      const products_list = productos;
       dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products_list });
     } catch (error) {
       dispatch({ type: GET_PRODUCTS_ERROR });
@@ -45,7 +44,7 @@ export const ProductsProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    fetchProducts(products);
+    fetchProducts(productos);
   }, []);
 
   // ---------------> PROVIDER

@@ -441,8 +441,8 @@ img {
     transition: 0.25s linear all;
     font-weight: 600; }
 
-/*  ::::: Featured Products :::::  */
-.featured-products {
+/*  ::::: Products Categories :::::  */
+.categories-products {
   height: auto;
   background: #fff;
   padding-bottom: 1.7rem;
@@ -540,13 +540,16 @@ img {
   letter-spacing: 1px;
   padding: 1rem 0rem; }
   .article-desc button {
+    font-size: 1rem;
     letter-spacing: 2.5px;
     padding-top: 1.2rem;
     cursor: pointer;
     transition: 0.25s linear all;
     color: #8c1212; }
+    .article-desc button:hover {
+      color: #d5b13a; }
 
-/*  ::::: Homepage :::::  */
+/*  ::::: Products Featured :::::  */
 /*  ::::: Homepage :::::  */
 /*  ::::: Homepage :::::  */
 /*  ::::: Homepage :::::  */

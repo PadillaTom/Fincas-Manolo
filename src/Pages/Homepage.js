@@ -5,18 +5,19 @@ import {
   HeroNew,
   ServicesNew,
   PromoProducts,
-  FeaturedProducts,
+  ProductsCategories,
   Articles,
+  ProductsFeatured,
 } from '../Components';
 
 const Homepage = () => {
   return (
     <div className='section home-sect'>
       <HeroNew></HeroNew>
-      <FeaturedProducts></FeaturedProducts>
+      <ProductsCategories></ProductsCategories>
       <PromoProducts></PromoProducts>
       <ServicesNew></ServicesNew>
-
+      <ProductsFeatured></ProductsFeatured>
       <Articles></Articles>
     </div>
   );

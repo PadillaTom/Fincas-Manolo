@@ -85,10 +85,10 @@ export const articles = [
 ];
 
 // ---> Productos <---
-export const products = [
+export const productos = [
   {
     id: 1,
-    slug: 'nuez-pecan',
+    slug: '/frutos-secos',
     name: 'Nueces Pecán',
     desc:
       'Las nueces pecán son deliciosos generadores de energía, llenos de nutrientes, que pueden resultar un bocadillo ideal o utilizarse como condimento o ingrediente en tus recetas favoritas.',
@@ -97,12 +97,12 @@ export const products = [
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/1%20Nuez%20pecan%20x500g.jpg?alt=media&token=506bcc7c-1897-4b58-8638-06e6f482604b',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
-    featured: false,
-    category: 'secos',
+    featured: true,
+    category: 'Frutos Secos',
   },
   {
     id: 2,
-    slug: 'almendras',
+    slug: '/frutos-secos',
     name: 'Almendras Non Pareil',
     desc: `La almendra es uno de los frutos secos con mayor aporte de vitamina E, una vitamina cuya ingesta a menudo está por debajo de lo que sería recomendable y que ejerce un valioso papel antioxidante. 50 g diarios de almendras crudas cubren las necesidades diarias de esta vitamina.
 Otro punto destacable es su contenido en fibra. Es ideal para estimular los movimientos intestinales y para conferir sensación de saciedad. El contenido en hierro es otra de las virtudes de este delicioso fruto seco.`,
@@ -111,12 +111,12 @@ Otro punto destacable es su contenido en fibra. Es ideal para estimular los movi
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/1Almendras%20non%20pareil%20x500.jpg?alt=media&token=d05471a3-2069-4068-9867-57332d1f78fc',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
-    featured: false,
-    category: 'secos',
+    featured: true,
+    category: 'Frutos Secos',
   },
   {
     id: 3,
-    slug: 'caju',
+    slug: '/frutos-secos',
     name: 'Castañas de Cajú',
     desc: `Las castañas de cajú son una valiosa fuente de ácidos grasos insaturados, los cuales ayudan a equilibrar los niveles de colesterol y triglicéridos, beneficiando la salud cardiovascular.
 Es antioxidante y favorece el restablecimiento de calcio en los huesos. También se le atribuyen propiedades afrodisíacas.
@@ -127,11 +127,11 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
-    category: 'secos',
+    category: 'Frutos Secos',
   },
   {
     id: 4,
-    slug: 'nuez-chandler',
+    slug: '/frutos-secos',
     name: 'Nueces Chandler Extra Light Peladas',
     desc: `Las nueces contienen ácidos grasos de serie de los ácidos grasos omega 3. Otorgan protección cardiovascular, importante para el cerebro y para aumentar la producción de colesterol bueno. Estos ácidos, además, tienen poder antiinflamatorio.`,
     peso: '500g',
@@ -140,11 +140,11 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
-    category: 'secos',
+    category: 'Frutos Secos',
   },
   {
     id: 5,
-    slug: 'pasas',
+    slug: '/frutos-secos',
     name: 'Pasas de Uva',
     desc: `Las pasas de uva tienen múltiples propiedades para la salud. Si comemos algunas cada día será bueno para nuestro sistema digestivo, ya que contienen fibra. Esto ayuda a aliviar el estreñimiento y permite regularizar la digestión. Tienen un alto contenido de magnesio y potasio, lo que ayuda a reducir la acidez y eliminar las toxinas del organismo, previniendo enfermedades como la artritis, la gota, las piedras en los riñones y las enfermedades del corazón.`,
     peso: '500g',
@@ -152,8 +152,8 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/1Pasas%20de%20uwu%20x500.jpg?alt=media&token=1e306046-3cc3-4a61-880a-0d28ac22e9c7',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
-    featured: false,
-    category: 'secos',
+    featured: true,
+    category: 'Frutos Secos',
   },
   {
     id: 6,
@@ -167,7 +167,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
-    category: 'aceites',
+    category: 'Aceites',
   },
   {
     id: 7,
@@ -180,8 +180,8 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/2aceite%20250.jpg?alt=media&token=527dc964-2d3b-4639-857c-4d007215e15d',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
-    featured: false,
-    category: 'aceites',
+    featured: true,
+    category: 'Aceites',
   },
   {
     id: 8,
@@ -195,7 +195,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
-    category: 'aceites',
+    category: 'Aceites',
   },
   {
     id: 9,
@@ -209,7 +209,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
     featured: false,
-    category: 'aceites',
+    category: 'Aceites',
   },
   {
     id: 10,
@@ -222,12 +222,12 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/2aceite%205l.jpg?alt=media&token=526b8996-e7f9-440d-adc7-4d2bf0cb85fa',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
-    featured: false,
-    category: 'aceites',
+    featured: true,
+    category: 'Aceites',
   },
   {
     id: 11,
-    slug: 'aceitunas-negras',
+    slug: '/el-olivar',
     name: 'Aceitunas Negras en Aceite y Laurel',
     desc: `Las aceitunas son muy ricas en ácidos grasos Omega 3 y Omega 6, esenciales para mantener una buena salud cardiovascular. Aportan vitaminas, y las negras tienen mayor cantidad de hierro. Además, contienen otras sustancias antioxidantes que te ayudarán a reforzar el sistema inmunitario.
 Las aceitunas una buena fuente de fibra, así que también ayudan al correcto funcionamiento del aparato digestivo.`,
@@ -236,12 +236,12 @@ Las aceitunas una buena fuente de fibra, así que también ayudan al correcto fu
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/3Aceitunas%20negras%20en%20aceite%20y%20laurel%20x360.jpg?alt=media&token=886b5eaf-95b7-4204-8098-cc106dede044',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
-    featured: false,
-    category: 'olives',
+    featured: true,
+    category: 'Aceitunas',
   },
   {
     id: 12,
-    slug: 'aceitunas-verdes',
+    slug: '/el-olivar',
     name: 'Aceitunas Verdes en Salmuera y Laurel',
     desc: `Las aceitunas son muy ricas en ácidos grasos Omega 3 y Omega 6, esenciales para mantener una buena salud cardiovascular. Aportan vitaminas, y las negras tienen mayor cantidad de hierro. Además, contienen otras sustancias antioxidantes que te ayudarán a reforzar el sistema inmunitario.
 Las aceitunas una buena fuente de fibra, así que también ayudan al correcto funcionamiento del aparato digestivo.`,
@@ -250,8 +250,8 @@ Las aceitunas una buena fuente de fibra, así que también ayudan al correcto fu
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/3Aceitunas%20verdes%20en%20salmuera%20x500.jpg?alt=media&token=7f7ba6b2-f10d-4785-952b-954a98e42945',
     promoImgUrl: 'LINK A BUENA FOTO',
     precio: 'PRECIO',
-    featured: false,
-    category: 'olives',
+    featured: true,
+    category: 'Aceitunas',
   },
 ];
 

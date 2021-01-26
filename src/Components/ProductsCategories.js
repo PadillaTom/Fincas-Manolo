@@ -4,7 +4,7 @@ import { categories } from '../Utils/constants';
 // Gsap:
 import { TweenMax } from 'gsap';
 
-const FeaturedProducts = () => {
+const ProductsCategories = () => {
   // Data:
   const [myCategories, setCategories] = useState([]);
   useEffect(() => {
@@ -12,13 +12,13 @@ const FeaturedProducts = () => {
   }, []);
 
   // GSAP:
-  TweenMax.from('.featured-products', 0.5, {
-    delay: 2.5,
+  TweenMax.from('.categories-products', 0.5, {
+    delay: 2.8,
     opacity: 0,
   });
 
   return (
-    <section className='featured-products'>
+    <section className='categories-products'>
       <div className='section-center'>
         <h2 className='section-title'>
           Categorías <span>Productos</span>
@@ -39,4 +39,4 @@ const FeaturedProducts = () => {
   );
 };
 
-export default FeaturedProducts;
+export default ProductsCategories;
