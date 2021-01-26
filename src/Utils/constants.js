@@ -90,6 +90,7 @@ export const productos = [
     id: 1,
     slug: '/frutos-secos',
     name: 'Nueces Pecán',
+    shortName: 'Nueces Pecán',
     desc:
       'Las nueces pecán son deliciosos generadores de energía, llenos de nutrientes, que pueden resultar un bocadillo ideal o utilizarse como condimento o ingrediente en tus recetas favoritas.',
     peso: '500g',
@@ -104,6 +105,7 @@ export const productos = [
     id: 2,
     slug: '/frutos-secos',
     name: 'Almendras Non Pareil',
+    shortName: 'Almendras',
     desc: `La almendra es uno de los frutos secos con mayor aporte de vitamina E, una vitamina cuya ingesta a menudo está por debajo de lo que sería recomendable y que ejerce un valioso papel antioxidante. 50 g diarios de almendras crudas cubren las necesidades diarias de esta vitamina.
 Otro punto destacable es su contenido en fibra. Es ideal para estimular los movimientos intestinales y para conferir sensación de saciedad. El contenido en hierro es otra de las virtudes de este delicioso fruto seco.`,
     peso: '500g',
@@ -118,6 +120,7 @@ Otro punto destacable es su contenido en fibra. Es ideal para estimular los movi
     id: 3,
     slug: '/frutos-secos',
     name: 'Castañas de Cajú',
+    shortName: 'Castañas de Cajú',
     desc: `Las castañas de cajú son una valiosa fuente de ácidos grasos insaturados, los cuales ayudan a equilibrar los niveles de colesterol y triglicéridos, beneficiando la salud cardiovascular.
 Es antioxidante y favorece el restablecimiento de calcio en los huesos. También se le atribuyen propiedades afrodisíacas.
 Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso de: irritabilidad, nerviosismo, depresión y cansancio o debilidad física anormales.`,
@@ -133,6 +136,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     id: 4,
     slug: '/frutos-secos',
     name: 'Nueces Chandler Extra Light Peladas',
+    shortName: 'Nueces Chandler',
     desc: `Las nueces contienen ácidos grasos de serie de los ácidos grasos omega 3. Otorgan protección cardiovascular, importante para el cerebro y para aumentar la producción de colesterol bueno. Estos ácidos, además, tienen poder antiinflamatorio.`,
     peso: '500g',
     imgUrl:
@@ -146,6 +150,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     id: 5,
     slug: '/frutos-secos',
     name: 'Pasas de Uva',
+    shortName: 'Pasas de Uva',
     desc: `Las pasas de uva tienen múltiples propiedades para la salud. Si comemos algunas cada día será bueno para nuestro sistema digestivo, ya que contienen fibra. Esto ayuda a aliviar el estreñimiento y permite regularizar la digestión. Tienen un alto contenido de magnesio y potasio, lo que ayuda a reducir la acidez y eliminar las toxinas del organismo, previniendo enfermedades como la artritis, la gota, las piedras en los riñones y las enfermedades del corazón.`,
     peso: '500g',
     imgUrl:
@@ -159,6 +164,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     id: 6,
     slug: '/el-olivar',
     name: 'Aceite de Oliva',
+    shortName: 'Aceite de Oliva',
     desc:
       'Nuestro aceite de oliva Premium está compuesto de un blend de nuestras mejores variedades.',
     peso: '1 Litro',
@@ -173,6 +179,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     id: 7,
     slug: '/el-olivar',
     name: 'Aceite de Oliva',
+    shortName: 'Aceite de Oliva',
     desc:
       'Nuestro aceite de oliva Premium está compuesto de un blend de nuestras mejores variedades.',
     peso: '250 ml.',
@@ -187,6 +194,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     id: 8,
     slug: '/el-olivar',
     name: 'Aceite de Oliva',
+    shortName: 'Aceite de Oliva',
     desc:
       'Nuestro aceite de oliva Premium está compuesto de un blend de nuestras mejores variedades.',
     peso: '2 Litros',
@@ -201,6 +209,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     id: 9,
     slug: '/el-olivar',
     name: 'Aceite de Oliva',
+    shortName: 'Aceite de Oliva',
     desc:
       'Nuestro aceite de oliva Premium está compuesto de un blend de nuestras mejores variedades.',
     peso: '500 ml.',
@@ -215,6 +224,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     id: 10,
     slug: '/el-olivar',
     name: 'Aceite de Oliva',
+    shortName: 'Aceite de Oliva',
     desc:
       'Nuestro aceite de oliva Premium está compuesto de un blend de nuestras mejores variedades.',
     peso: '5 Litros',
@@ -229,6 +239,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     id: 11,
     slug: '/el-olivar',
     name: 'Aceitunas Negras en Aceite y Laurel',
+    shortName: 'Aceitunas Negras',
     desc: `Las aceitunas son muy ricas en ácidos grasos Omega 3 y Omega 6, esenciales para mantener una buena salud cardiovascular. Aportan vitaminas, y las negras tienen mayor cantidad de hierro. Además, contienen otras sustancias antioxidantes que te ayudarán a reforzar el sistema inmunitario.
 Las aceitunas una buena fuente de fibra, así que también ayudan al correcto funcionamiento del aparato digestivo.`,
     peso: ['500 Grs.', '360 Grs.'],
@@ -243,6 +254,7 @@ Las aceitunas una buena fuente de fibra, así que también ayudan al correcto fu
     id: 12,
     slug: '/el-olivar',
     name: 'Aceitunas Verdes en Salmuera y Laurel',
+    shortName: 'Aceitunas Verdes',
     desc: `Las aceitunas son muy ricas en ácidos grasos Omega 3 y Omega 6, esenciales para mantener una buena salud cardiovascular. Aportan vitaminas, y las negras tienen mayor cantidad de hierro. Además, contienen otras sustancias antioxidantes que te ayudarán a reforzar el sistema inmunitario.
 Las aceitunas una buena fuente de fibra, así que también ayudan al correcto funcionamiento del aparato digestivo.`,
     peso: ['500 Grs.', '360 Grs.'],
