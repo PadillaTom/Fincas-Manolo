@@ -302,5 +302,66 @@ export const categories = [
     slug: '/vinos',
   },
 ];
-// ---> CONTACTO <---
+// ---> Nosotros <---
+export const nosotros = [
+  [
+    {
+      id: 1,
+      title: 'Valle Único ',
+      text: `Nuestras primeras vides y olivos fueron plantados en 1994 en el Valle de Famatina a unos 1.200 km al Noroeste de Buenos Aires. La finca está rodeada por las sierras Velasco y Famatina que se desprenden de la impresionante cordillera de los Andes.   Este valle único ofrece vistas magníficas y un suelo de muy buen drenaje.`,
+    },
+  ],
+  [
+    {
+      id: 1,
+      title: 'Ubicación',
+      text: `Valle de Famatina, La Rioja, Argentina. Latitud:  29°24'27.33"S Longitud:  67°29'45.10”W`,
+    },
+    {
+      id: 2,
+      title: 'SUELO & ALTITUD',
+      text: `Franco arenosos de origen aluvional. Altitud: 1.000 m. | 2.380 pies sobre el nivel del mar.`,
+    },
+    {
+      id: 3,
+      title: 'CLIMA',
+      text: `Caluroso y semi-desértico. La diferencia de temperatura entre el día y la noche puede alcanzar 20°C | 68°F. Lluvias anuales entre 100-200mm | 4-8 pulgadas`,
+    },
+  ],
+  [
+    {
+      id: 1,
+      cifra: '4.000',
+      title: 'Hectáreas de campo',
+    },
+    {
+      id: 2,
+      cifra: '150',
+      title: 'Hectáreas de viñedos',
+    },
+    {
+      id: 3,
+      cifra: '2.2 mill.',
+      title: 'Litros de vino por año',
+    },
+    {
+      id: 4,
+      cifra: '770',
+      title: 'Hectáreas de olivares',
+    },
+    {
+      id: 5,
+      cifra: '15 mill.',
+      title: 'Kilogramos de aceitunas',
+    },
+    {
+      id: 6,
+      cifra: '1.400',
+      title: 'Toneladas de aceite por año',
+    },
+  ],
+];
+// ---> GALERIA <---
+// ---> GALERIA <---
+// ---> GALERIA <---
 // ---> GALERIA <---

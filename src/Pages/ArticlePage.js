@@ -7,7 +7,6 @@ const ArticlePage = () => {
   const history = useHistory();
   // Find Article by slug:
   const myArticle = articles.find((art) => art.slug === slug);
-  console.log(myArticle);
   // Main
   return (
     <div className='section'>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // Data:
 import { categories } from '../Utils/constants';
 // Gsap:
-import { TweenMax } from 'gsap';
+import gsap, { TweenMax } from 'gsap';
 
 const ProductsCategories = () => {
   // Data:
@@ -13,13 +13,14 @@ const ProductsCategories = () => {
   }, []);
 
   // GSAP:
-  TweenMax.from('.categories-products', 0.5, {
+  gsap.config({ nullTargetWarn: false });
+  TweenMax.from('.categoriesContainer', 0.5, {
     delay: 2.8,
     opacity: 0,
   });
 
   return (
-    <section className='categories-products'>
+    <section className='categoriesContainer'>
       <div className='section-center'>
         <h2 className='section-title'>
           Categorías <span>Productos</span>

@@ -412,7 +412,7 @@ img {
     transition: 0.25s linear all; }
 
 /*  ::::: Products Categories :::::  */
-.categories-products {
+.categoriesContainer {
   height: auto;
   background: #fff;
   padding: 1.5rem 0rem;
@@ -599,9 +599,13 @@ img {
 
 /*  ::::: Rewvies :::::  */
 .reviewsContainer {
-  padding: 1.5rem 0rem; }
+  padding: 1.5rem 0rem;
+  height: 30vh; }
 
-/*  ::::: Homepage :::::  */
+/*  ::::: About PAGE :::::  */
+.aboutSect {
+  position: relative; }
+
 /*  ::::: Homepage :::::  */
 /*  ::::: Homepage :::::  */
 /*  ::::: Homepage :::::  */
