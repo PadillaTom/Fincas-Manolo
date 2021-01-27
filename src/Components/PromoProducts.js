@@ -17,7 +17,7 @@ const PromoProducts = () => {
             Nuestro aceite de oliva Premium está compuesto de un blend de
             nuestras mejores variedades.
           </p>
-          <Link to='/el-olivar'>
+          <Link to='/productos/aceite250'>
             <button type='button'>Ver Más</button>
           </Link>
         </div>
@@ -30,7 +30,7 @@ const PromoProducts = () => {
             Producir vinos de calidad en las condiciones generadas por el clima
             extremo de la región es un verdadero desafío.
           </p>
-          <Link to='/vinos'>
+          <Link to='/productos/vinos'>
             <button type='button'>Ver Más</button>
           </Link>
         </div>

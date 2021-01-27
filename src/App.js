@@ -12,8 +12,6 @@ import {
   ProductsPage,
   ContactPage,
   GalleryPage,
-  VinosPage,
-  FrutosPage,
   ArticlePage,
 } from './Pages';
 // Helpers
@@ -37,20 +35,15 @@ function App() {
           <Route path='/el-olivar'>
             <OlivarPage></OlivarPage>
           </Route>
-          <Route path='/productos'>
-            <ProductsPage></ProductsPage>
-          </Route>
+          <Route
+            path='/productos/:slug'
+            children={<ProductsPage></ProductsPage>}
+          ></Route>
           <Route path='/contacto'>
             <ContactPage></ContactPage>
           </Route>
           <Route path='/gallery'>
             <GalleryPage></GalleryPage>
-          </Route>
-          <Route path='/vinos'>
-            <VinosPage></VinosPage>
-          </Route>
-          <Route path='/frutos-secos'>
-            <FrutosPage></FrutosPage>
           </Route>
           <Route
             path='/articles/:slug'

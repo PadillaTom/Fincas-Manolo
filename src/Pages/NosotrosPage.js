@@ -1,33 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import { Loading } from '../Components';
 // Data:
 import { nosotros } from '../Utils/constants';
 
 const NosotrosPage = () => {
-  const [myNosotros, setMyNosotros] = useState();
+  const data1 = nosotros[0][0];
+  const data2 = nosotros[1];
+  const data3 = nosotros[2];
 
-  const getData = async () => {
-    const data = await nosotros;
-    setMyNosotros(data);
-  };
-  getData();
-
-  if (myNosotros.length === 0) {
+  if ((data1 || data2 || data3).length === 0) {
     return <Loading></Loading>;
   }
-  const data1 = myNosotros[0][0];
-  const data2 = myNosotros[1];
-  const data3 = myNosotros[2];
 
   return (
-    <div className='section aboutSect'>
+    <section className='section aboutSect'>
+      {/* Main */}
       <div className='section-center'>
         <h2 className='page-title'>{data1.title}</h2>
+        <p className='main-desc'>{data1.text}</p>
       </div>
-      <article className='about-text'>
-        <p>{data1.text}</p>
-      </article>
+      {/* Sections */}
       <article className='about-data'>
         <div className='location'>
           {data2.map((data) => {
@@ -52,7 +44,7 @@ const NosotrosPage = () => {
           );
         })}
       </article>
-    </div>
+    </section>
   );
 };
 

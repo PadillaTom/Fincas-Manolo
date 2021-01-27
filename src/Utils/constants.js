@@ -22,7 +22,7 @@ export const links = [
   {
     id: 4,
     name: 'Productos',
-    url: '/productos',
+    url: '/productos/aceite250',
   },
   {
     id: 5,
@@ -91,7 +91,7 @@ export const articles = [
 export const productos = [
   {
     id: 1,
-    slug: '/frutos-secos',
+    slug: 'pecan',
     name: 'Nueces Pecán',
     shortName: 'Nueces Pecán',
     desc:
@@ -106,7 +106,7 @@ export const productos = [
   },
   {
     id: 2,
-    slug: '/frutos-secos',
+    slug: 'almendras',
     name: 'Almendras Non Pareil',
     shortName: 'Almendras',
     desc: `La almendra es uno de los frutos secos con mayor aporte de vitamina E, una vitamina cuya ingesta a menudo está por debajo de lo que sería recomendable y que ejerce un valioso papel antioxidante. 50 g diarios de almendras crudas cubren las necesidades diarias de esta vitamina.
@@ -121,7 +121,7 @@ Otro punto destacable es su contenido en fibra. Es ideal para estimular los movi
   },
   {
     id: 3,
-    slug: '/frutos-secos',
+    slug: 'caju',
     name: 'Castañas de Cajú',
     shortName: 'Castañas de Cajú',
     desc: `Las castañas de cajú son una valiosa fuente de ácidos grasos insaturados, los cuales ayudan a equilibrar los niveles de colesterol y triglicéridos, beneficiando la salud cardiovascular.
@@ -137,7 +137,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
   },
   {
     id: 4,
-    slug: '/frutos-secos',
+    slug: 'nueces',
     name: 'Nueces Chandler Extra Light Peladas',
     shortName: 'Nueces Chandler',
     desc: `Las nueces contienen ácidos grasos de serie de los ácidos grasos omega 3. Otorgan protección cardiovascular, importante para el cerebro y para aumentar la producción de colesterol bueno. Estos ácidos, además, tienen poder antiinflamatorio.`,
@@ -151,7 +151,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
   },
   {
     id: 5,
-    slug: '/frutos-secos',
+    slug: 'pasas',
     name: 'Pasas de Uva',
     shortName: 'Pasas de Uva',
     desc: `Las pasas de uva tienen múltiples propiedades para la salud. Si comemos algunas cada día será bueno para nuestro sistema digestivo, ya que contienen fibra. Esto ayuda a aliviar el estreñimiento y permite regularizar la digestión. Tienen un alto contenido de magnesio y potasio, lo que ayuda a reducir la acidez y eliminar las toxinas del organismo, previniendo enfermedades como la artritis, la gota, las piedras en los riñones y las enfermedades del corazón.`,
@@ -165,7 +165,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
   },
   {
     id: 6,
-    slug: '/el-olivar',
+    slug: 'aceite1l',
     name: 'Aceite de Oliva',
     shortName: 'Aceite de Oliva',
     desc:
@@ -180,7 +180,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
   },
   {
     id: 7,
-    slug: '/el-olivar',
+    slug: 'aceite250',
     name: 'Aceite de Oliva',
     shortName: 'Aceite de Oliva',
     desc:
@@ -195,7 +195,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
   },
   {
     id: 8,
-    slug: '/el-olivar',
+    slug: 'aceite2l',
     name: 'Aceite de Oliva',
     shortName: 'Aceite de Oliva',
     desc:
@@ -210,7 +210,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
   },
   {
     id: 9,
-    slug: '/el-olivar',
+    slug: 'aceite500',
     name: 'Aceite de Oliva',
     shortName: 'Aceite de Oliva',
     desc:
@@ -225,7 +225,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
   },
   {
     id: 10,
-    slug: '/el-olivar',
+    slug: 'aceite5l',
     name: 'Aceite de Oliva',
     shortName: 'Aceite de Oliva',
     desc:
@@ -240,7 +240,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
   },
   {
     id: 11,
-    slug: '/el-olivar',
+    slug: 'aceitunasN',
     name: 'Aceitunas Negras en Aceite y Laurel',
     shortName: 'Aceitunas Negras',
     desc: `Las aceitunas son muy ricas en ácidos grasos Omega 3 y Omega 6, esenciales para mantener una buena salud cardiovascular. Aportan vitaminas, y las negras tienen mayor cantidad de hierro. Además, contienen otras sustancias antioxidantes que te ayudarán a reforzar el sistema inmunitario.
@@ -255,7 +255,7 @@ Las aceitunas una buena fuente de fibra, así que también ayudan al correcto fu
   },
   {
     id: 12,
-    slug: '/el-olivar',
+    slug: 'aceitunasV',
     name: 'Aceitunas Verdes en Salmuera y Laurel',
     shortName: 'Aceitunas Verdes',
     desc: `Las aceitunas son muy ricas en ácidos grasos Omega 3 y Omega 6, esenciales para mantener una buena salud cardiovascular. Aportan vitaminas, y las negras tienen mayor cantidad de hierro. Además, contienen otras sustancias antioxidantes que te ayudarán a reforzar el sistema inmunitario.
@@ -277,14 +277,14 @@ export const categories = [
     imgUrl:
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/FilterOils.png?alt=media&token=adedb7ec-2dd5-4aa6-9fa2-11dd0ab454f3',
     name: 'Aceites',
-    slug: '/el-olivar',
+    slug: 'aceite250',
   },
   {
     id: 2,
     imgUrl:
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/FilterAlmonds.png?alt=media&token=047b1e6f-8f76-45df-9289-e17d785addbc',
     name: 'Frutos Secos',
-    slug: '/frutos-secos',
+    slug: 'pasas',
   },
   {
     id: 3,
@@ -292,14 +292,14 @@ export const categories = [
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/FilterOlives.png?alt=media&token=7f9618c7-6739-4170-b11e-9b6ea070b247',
 
     name: 'Aceitunas',
-    slug: '/el-olivar',
+    slug: 'aceitunasV',
   },
   {
     id: 4,
     imgUrl:
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/FilterWines.png?alt=media&token=ba178e6f-fb0c-431b-9928-dea1ab59f926',
     name: 'Vinos',
-    slug: '/vinos',
+    slug: 'vinos',
   },
 ];
 // ---> Nosotros <---
@@ -361,7 +361,21 @@ export const nosotros = [
     },
   ],
 ];
-// ---> GALERIA <---
+// ---> EL Olivar <---
+export const elOlivar = [
+  {
+    id: 1,
+    title: 'El Olivar',
+    desc: `Nuestros primeros olivos fueron plantados en 1994 y ahora cubren una superficie total plantada de 770 hectáreas / 1,903 acres con siete diferentes variedades: Arbequina, Nabali, Barnea, Picual, Coratina, Arauco y Manzanilla. 
+El aire en la región es seco y puro, el suelo compuesto principalmente de arena no retiene agua evitando el exceso de humedad que causa enfermedades, por lo tanto no es necesario el uso de pesticidas.
+La cosecha comienza a mediados de Marzo y finaliza en Junio con un rinde promedio de 19 ton. de olivos por hectárea, produciendo 1.400 toneladas de aceite de oliva por año aproximadamente.`,
+  },
+  {
+    id: 2,
+    title: 'ACEITE DE OLIVA PREMIUM VIRGEN EXTRA',
+    desc: `Nuestro aceite de oliva Premium está compuesto de un blend de nuestras mejores variedades. La Arbequina aporta aromas intensos a frutas, la Picual agrega frescura y un suave picante mientras que la Barnea le da un toque de dulce al blend. Finalmente, agregamos un poco de Arauco que realza las sobresalientes características del resto de las variedades.`,
+  },
+];
 // ---> GALERIA <---
 // ---> GALERIA <---
 // ---> GALERIA <---

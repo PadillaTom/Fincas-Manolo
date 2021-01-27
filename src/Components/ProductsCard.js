@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProductsCard = ({ slug, desc, imgUrl, precio, shortName }) => {
+const ProductsCard = ({ slug, desc, imgUrl, shortName }) => {
   // Description to Array:
   let wordArrays = desc.split(' ');
 
@@ -15,7 +15,7 @@ const ProductsCard = ({ slug, desc, imgUrl, precio, shortName }) => {
           <h2>{shortName}</h2>
           <p>{wordArrays.slice(0, 10).join(' ')}... </p>
         </div>
-        <Link to={slug} className='desc-cta'>
+        <Link to={`/productos/${slug}`} className='desc-cta'>
           <button type='button'>Detalles</button>
         </Link>
       </div>
