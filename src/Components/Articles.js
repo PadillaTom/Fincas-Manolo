@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { articles } from '../Utils/constants';
 import { Loading } from '../Components';
 
 const Articles = () => {
   // Getting Data
   const [myArticles, setMyArticles] = useState([]);
-  const art1img =
-    'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/diaguita.jpg?alt=media&token=9c2267d5-3d39-46e4-b6c7-678494cbc20b';
+
   useEffect(() => {
     setMyArticles(articles);
   }, []);
@@ -25,17 +25,19 @@ const Articles = () => {
       </div>
       <div className='articlesCard-container'>
         {myArticles.map((article) => {
-          const { subtitle, desc, id } = article;
+          const { subtitle, desc, id, imgUrl, slug } = article;
           return (
             <article className='article-card' key={id}>
               <div className='article-img'>
-                <img src={art1img} alt={subtitle} />
+                <img src={imgUrl} alt={subtitle} />
                 <div className='article-img-title'></div>
                 <h2>{subtitle}</h2>
               </div>
               <div className='article-desc'>
                 <p>{desc}</p>
-                <button className='articles-btn'>Continuar Leyendo...</button>
+                <Link to={`/articles/${slug}`}>
+                  <button className='articles-btn'>Continuar Leyendo...</button>
+                </Link>
               </div>
             </article>
           );

@@ -11,7 +11,7 @@ const PromoProducts = () => {
     <div className='promoContainer'>
       <div className='promo'>
         <img src={olivaImage} alt='Aceites Preimum' />
-        <div className='promo-aceites-info'>
+        <div className='promo-info'>
           <h2>Aceites Premium</h2>
           <p>
             Nuestro aceite de oliva Premium está compuesto de un blend de
@@ -24,7 +24,7 @@ const PromoProducts = () => {
       </div>
       <div className='promo'>
         <img src={wineImage} alt='Vinos Preimum' />
-        <div className='promo-vinos-info'>
+        <div className='promo-info'>
           <h2>Vinos Premium</h2>
           <p>
             Producir vinos de calidad en las condiciones generadas por el clima

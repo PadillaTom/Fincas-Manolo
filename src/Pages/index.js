@@ -8,6 +8,7 @@ import ContactPage from './ContactPage';
 import GalleryPage from './GalleryPage';
 import VinosPage from './VinosPage';
 import FrutosPage from './FrutosPage';
+import ArticlePage from './ArticlePage';
 
 // Pages EXPORTS:
 export {
@@ -20,4 +21,5 @@ export {
   GalleryPage,
   VinosPage,
   FrutosPage,
+  ArticlePage,
 };

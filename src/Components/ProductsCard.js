@@ -15,10 +15,8 @@ const ProductsCard = ({ slug, desc, imgUrl, precio, shortName }) => {
           <h2>{shortName}</h2>
           <p>{wordArrays.slice(0, 10).join(' ')}... </p>
         </div>
-        <Link to={slug}>
-          <div className='desc-cta'>
-            <button type='button'>Detalles</button>
-          </div>
+        <Link to={slug} className='desc-cta'>
+          <button type='button'>Detalles</button>
         </Link>
       </div>
     </article>

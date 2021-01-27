@@ -29,12 +29,10 @@ const ProductsCategories = () => {
         {myCategories.map((cat) => {
           const { imgUrl, id, name, slug } = cat;
           return (
-            <div className='single-icon' key={id}>
-              <Link to={slug}>
-                <img src={imgUrl} alt={name} />
-                <p>{name}</p>
-              </Link>
-            </div>
+            <Link to={slug} className='single-icon' key={id}>
+              <img src={imgUrl} alt={name} />
+              <p>{name}</p>
+            </Link>
           );
         })}
       </div>

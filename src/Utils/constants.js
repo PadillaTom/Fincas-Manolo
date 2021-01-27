@@ -81,6 +81,9 @@ export const articles = [
               El Puma que usamos en nuestro logo y las etiquetas de La Puerta representa el ser terrenal supremo por su sabiduría, fuerza e inteligencia.`,
     desc:
       'Nuestros viñedos se encuentran en tierras que habitaron los Diaguitas, pueblos originarios de La Rioja, Argentina, hace cientos de años.',
+    imgUrl:
+      'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/diaguita.jpg?alt=media&token=9c2267d5-3d39-46e4-b6c7-678494cbc20b',
+    slug: 'los-diaguitas',
   },
 ];
 
