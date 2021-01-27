@@ -10,7 +10,6 @@ import PromoProducts from './PromoProducts';
 import ServicesNew from './ServicesNew';
 import ProductsFeatured from './ProductsFeatured';
 import ProductsCard from './ProductsCard';
-import ProductsCarousel from './ProductsCarousel';
 import Articles from './Articles';
 import Reviews from './Reviews';
 import Footer from './Footer';
@@ -27,7 +26,6 @@ export {
   ServicesNew,
   ProductsFeatured,
   ProductsCard,
-  ProductsCarousel,
   Articles,
   Reviews,
   Footer,

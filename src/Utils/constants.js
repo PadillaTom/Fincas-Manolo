@@ -245,7 +245,7 @@ Por su riqueza en magnesio y vitaminas del grupo B, suele recomendarse en caso d
     shortName: 'Aceitunas Negras',
     desc: `Las aceitunas son muy ricas en ácidos grasos Omega 3 y Omega 6, esenciales para mantener una buena salud cardiovascular. Aportan vitaminas, y las negras tienen mayor cantidad de hierro. Además, contienen otras sustancias antioxidantes que te ayudarán a reforzar el sistema inmunitario.
 Las aceitunas una buena fuente de fibra, así que también ayudan al correcto funcionamiento del aparato digestivo.`,
-    peso: ['500 Grs.', '360 Grs.'],
+    peso: '500g & 360g',
     imgUrl:
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/3Aceitunas%20negras%20en%20aceite%20y%20laurel%20x360.jpg?alt=media&token=886b5eaf-95b7-4204-8098-cc106dede044',
     promoImgUrl: 'LINK A BUENA FOTO',
@@ -260,7 +260,7 @@ Las aceitunas una buena fuente de fibra, así que también ayudan al correcto fu
     shortName: 'Aceitunas Verdes',
     desc: `Las aceitunas son muy ricas en ácidos grasos Omega 3 y Omega 6, esenciales para mantener una buena salud cardiovascular. Aportan vitaminas, y las negras tienen mayor cantidad de hierro. Además, contienen otras sustancias antioxidantes que te ayudarán a reforzar el sistema inmunitario.
 Las aceitunas una buena fuente de fibra, así que también ayudan al correcto funcionamiento del aparato digestivo.`,
-    peso: ['500 Grs.', '360 Grs.'],
+    peso: '500g & 360g',
     imgUrl:
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/3Aceitunas%20verdes%20en%20salmuera%20x500.jpg?alt=media&token=7f7ba6b2-f10d-4785-952b-954a98e42945',
     promoImgUrl: 'LINK A BUENA FOTO',
@@ -284,7 +284,7 @@ export const categories = [
     imgUrl:
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/FilterAlmonds.png?alt=media&token=047b1e6f-8f76-45df-9289-e17d785addbc',
     name: 'Frutos Secos',
-    slug: 'pasas',
+    slug: 'almendras',
   },
   {
     id: 3,
