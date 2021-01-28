@@ -7,7 +7,6 @@ import { elOlivar } from '../Utils/constants';
 const OlivarPage = () => {
   const data1 = elOlivar[0];
   const data2 = elOlivar[1];
-
   const aceite2 =
     'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/Aceite1.png?alt=media&token=d970fd81-83ed-47ce-b0ea-936e768aff47';
   const lapuerta =

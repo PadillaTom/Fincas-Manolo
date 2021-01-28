@@ -29,11 +29,6 @@ export const links = [
     name: 'Contacto',
     url: '/contacto',
   },
-  {
-    id: 6,
-    name: 'Galería',
-    url: '/gallery',
-  },
 ];
 
 // ---> Servicios <---

@@ -73,6 +73,13 @@ button {
   text-align: center;
   padding-top: 0.7rem; }
 
+.page-subtitle {
+  text-align: center;
+  color: #666666;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase; }
+
 .main-desc {
   font-family: "Raleway", sans-serif;
   letter-spacing: 1.2px;
@@ -703,7 +710,7 @@ img {
 .olivarPng {
   position: absolute;
   z-index: -1;
-  top: 47%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -40%);
   opacity: 0.3;
@@ -866,12 +873,30 @@ img {
     font-size: 0.7rem;
     letter-spacing: 1px; }
 
-/*  ::::: Homepage :::::  */
-/*  ::::: Homepage :::::  */
-/*  ::::: Homepage :::::  */
-/*  ::::: Homepage :::::  */
-/*  ::::: Homepage :::::  */
-/*  ::::: Homepage :::::  */
+/*  ::::: Articles PAGE :::::  */
+.article-img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  margin-top: 3rem;
+  border-top: 1px solid #8c1212;
+  border-bottom: 1px solid #8c1212; }
+
+.articleContent {
+  width: 95%;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  margin-top: 1.5rem; }
+  .articleContent p {
+    font-family: "Raleway", sans-serif;
+    color: #272727;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+    font-size: 1rem;
+    width: 90%;
+    margin: 0 auto; }
+
+/*  ::::: Contact PAGE :::::  */
 /*  ::::: Footer :::::  */
 .footerContainer {
   border-top: 1px solid #d5d5d579;
