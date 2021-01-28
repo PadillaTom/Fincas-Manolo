@@ -1,4 +1,6 @@
-// /* 
+// Queries
+
+//  
 // ::::::::::::::::::::::::
 // ---> FONTS <---
 // ::::::::::::::::::::::::
@@ -143,43 +145,44 @@ button
 
 
 /*  ::::: Error Page :::::  */
-.err-sect
-  background: $Gray1
-.error-container 
+.errorContainer
+  display: flex
+  align-items: center
+  justify-content: space-around
+  padding: 3rem 0rem
+  height: 60vh  
+.errorCenter
   text-align: center
-  position: absolute
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
-  h1
-    color: $MainWhite
-    white-space: nowrap
-    font-size: 1.4rem
+  span
+    color: $CTAGold
+    font-size: 8rem
+    letter-spacing: 2px
+  h2
+    font-size: 1.5rem
     letter-spacing: 1.2px
-    font-weight: 300
-.numbers
-  color: $CTAGold
-  font-size: 10rem
-  font-weight: bold
-.error-cta
-  width: 95%
-  margin: 0 auto  
-  margin-top: 4rem
-  padding: 0.6rem 0rem
-  background: $CTAGold
-  border-radius: 3rem
+    font-family: $FontTexts
+    color: #3c3c3c 
+    margin-bottom: 4rem    
+.errorCTA
+  padding: 0.5rem 2rem  
+  background: $MainWhite
+  border-radius: 0.2rem
+  border: 1px solid black
+  color: black
+  letter-spacing: 1.2px
+  font-size: 1.1rem
+  font-weight: 500
   cursor: pointer
   transition: $MainTrans
-  color: white
   &:hover
-    background: white
-    color: $Gray1
-  p
-    z-index: 1
-    letter-spacing: 1px  
-    font-size: 1rem
-    font-weight: 500
-    text-transform: uppercase
+    background: black
+    color: $MainWhite
+    border: 1px solid white
+
+
+
+    
+  
 
 /*  ::::: Navbar Component :::::  */
 .navContainer 
@@ -395,7 +398,7 @@ img
 
 /*  ::::: Promoted Products :::::  */
 .promoContainer
-  width: 90%
+  width: 97%
   margin: 0 auto 
   padding: 1.5rem 0rem
 .promo
@@ -439,7 +442,7 @@ img
     color: $SecondaryWhite    
   button    
     position: absolute
-    bottom: 20%
+    bottom: 15%
     color: $SubtitleColor2
     letter-spacing: 1.3px
     background: #ffffff

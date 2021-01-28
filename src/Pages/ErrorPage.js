@@ -4,17 +4,13 @@ import { Link } from 'react-router-dom';
 const ErrorPage = () => {
   return (
     <>
-      <div className='section err-sect'>
-        <div className='section-center'>
-          <div className='error-container'>
-            <span className='numbers'>404</span>
-            <h1>Pagina No Encontrada</h1>
-            <Link to='/'>
-              <div className='error-cta'>
-                <p>Volver al Inicio</p>
-              </div>
-            </Link>
-          </div>
+      <div className='section errorContainer'>
+        <div className='errorCenter'>
+          <span>404</span>
+          <h2>Página no encontrada.</h2>
+          <Link to='/' className='errorCTA'>
+            Volver al Inicio
+          </Link>
         </div>
       </div>
     </>

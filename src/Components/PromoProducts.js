@@ -17,7 +17,7 @@ const PromoProducts = () => {
             Nuestro aceite de oliva Premium está compuesto de un blend de
             nuestras mejores variedades.
           </p>
-          <Link to='/productos/aceite250'>
+          <Link to='/el-olivar'>
             <button type='button'>Ver Más</button>
           </Link>
         </div>

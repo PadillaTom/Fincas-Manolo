@@ -109,46 +109,41 @@ button {
   top: 66.6%; }
 
 /*  ::::: Error Page :::::  */
-.err-sect {
-  background: #828282; }
+.errorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem 0rem;
+  height: 60vh; }
 
-.error-container {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-  .error-container h1 {
-    color: #fff;
-    white-space: nowrap;
-    font-size: 1.4rem;
+.errorCenter {
+  text-align: center; }
+  .errorCenter span {
+    color: #d5b13a;
+    font-size: 8rem;
+    letter-spacing: 2px; }
+  .errorCenter h2 {
+    font-size: 1.5rem;
     letter-spacing: 1.2px;
-    font-weight: 300; }
+    font-family: "Raleway", sans-serif;
+    color: #3c3c3c;
+    margin-bottom: 4rem; }
 
-.numbers {
-  color: #d5b13a;
-  font-size: 10rem;
-  font-weight: bold; }
-
-.error-cta {
-  width: 95%;
-  margin: 0 auto;
-  margin-top: 4rem;
-  padding: 0.6rem 0rem;
-  background: #d5b13a;
-  border-radius: 3rem;
+.errorCTA {
+  padding: 0.5rem 2rem;
+  background: #fff;
+  border-radius: 0.2rem;
+  border: 1px solid black;
+  color: black;
+  letter-spacing: 1.2px;
+  font-size: 1.1rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: 0.25s linear all;
-  color: white; }
-  .error-cta:hover {
-    background: white;
-    color: #828282; }
-  .error-cta p {
-    z-index: 1;
-    letter-spacing: 1px;
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase; }
+  transition: 0.25s linear all; }
+  .errorCTA:hover {
+    background: black;
+    color: #fff;
+    border: 1px solid white; }
 
 /*  ::::: Navbar Component :::::  */
 .navContainer {
@@ -376,7 +371,7 @@ img {
 
 /*  ::::: Promoted Products :::::  */
 .promoContainer {
-  width: 90%;
+  width: 97%;
   margin: 0 auto;
   padding: 1.5rem 0rem; }
 
@@ -422,7 +417,7 @@ img {
     color: #fafafa; }
   .promo-info button {
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     color: #8c1212;
     letter-spacing: 1.3px;
     background: #ffffff;
