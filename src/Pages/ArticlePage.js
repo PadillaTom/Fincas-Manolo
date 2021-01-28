@@ -16,7 +16,7 @@ const ArticlePage = () => {
         <h3 className='page-subtitle'>{contentTitle}</h3>
       </div>
       {/* Content */}
-      <img src={imgUrl} alt={title} className='article-img' />
+      <img src={imgUrl} alt={title} className='articleImg' />
       <div className='articleContent'>
         <p className='article-content'>{content}</p>
       </div>

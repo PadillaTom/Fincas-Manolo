@@ -14,7 +14,7 @@ const HeroNew = () => {
       x: '170%',
     })
       .from('.hero-man', 0.6, {
-        x: '-120%',
+        x: '-130%',
       })
       .from('.heroOlive', 1, {
         delay: 0,
