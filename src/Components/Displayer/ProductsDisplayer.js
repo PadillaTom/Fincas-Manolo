@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Loading, Error } from '../../Components';
+import { Loading, Error } from '../Shared';
 import { ProductsCarousel } from '../Displayer';
 import { useProductsContext } from '../../Context/products_context';
 

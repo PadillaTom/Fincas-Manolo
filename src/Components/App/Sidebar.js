@@ -7,11 +7,11 @@ import {
   AiOutlineInstagram,
   AiOutlineTwitter,
 } from 'react-icons/ai';
+
 // Data:
-import { links } from '../Utils/constants';
-// Context:
-import { useProductsContext } from '../Context/products_context';
-import { GetInnerHeight } from '../Utils/helpers';
+import { links } from '../../Utils/constants';
+import { useProductsContext } from '../../Context/products_context';
+import { GetInnerHeight } from '../../Utils/helpers';
 
 const Sidebar = () => {
   // Hook Context:

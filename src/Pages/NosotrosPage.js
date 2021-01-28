@@ -1,5 +1,5 @@
 import React from 'react';
-import { Loading } from '../Components';
+import { Loading } from '../Components/Shared';
 // Data:
 import { nosotros } from '../Utils/constants';
 
@@ -7,6 +7,8 @@ const NosotrosPage = () => {
   const data1 = nosotros[0][0];
   const data2 = nosotros[1];
   const data3 = nosotros[2];
+  const aboutImg =
+    'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/Sierras_de_Famatina_Chilecito.jpg?alt=media&token=01e36b93-5a64-454c-b44e-b849d2acd8c9';
 
   if ((data1 || data2 || data3).length === 0) {
     return <Loading></Loading>;
@@ -21,6 +23,7 @@ const NosotrosPage = () => {
       </div>
       {/* Sections */}
       <article className='about-data'>
+        <img src={aboutImg} alt='Sierras' />
         <div className='location'>
           {data2.map((data) => {
             const { title, text, id } = data;

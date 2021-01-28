@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { TweenMax, Expo } from 'gsap';
+
 // Data:
-import FMHoriz from '../Assets/FMHoriz.png';
+import FMHoriz from '../../Assets/FMHoriz.png';
 // Context:
-import { useProductsContext } from '../Context/products_context';
+import { useProductsContext } from '../../Context/products_context';
 
 const Navbar = () => {
   const { openSidebar, closeSidebar, isSidebarOpen } = useProductsContext();

@@ -34,7 +34,7 @@ const HeroNew = () => {
       <div className='heroDesc'>
         <h4>Elevada Altitud</h4>
         <p>Aceites y Vinos Premium</p>
-        <Link to='/productos'>
+        <Link to='/productos/aceite250'>
           <button className='heroCta'>Explorar</button>
         </Link>
       </div>

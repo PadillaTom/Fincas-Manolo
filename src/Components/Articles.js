@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { articles } from '../Utils/constants';
-import { Loading } from '../Components';
+import { Loading } from './Shared';
 
 const Articles = () => {
   // Getting Data

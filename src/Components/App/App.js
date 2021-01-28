@@ -1,9 +1,8 @@
 // Imports:
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// Components:
-import { WelcomeIntro, Navbar, Sidebar, Footer } from './Components';
-// Pages:
+
+import { WelcomeIntro, Navbar, Sidebar, Footer } from '../App';
 import {
   Home,
   ErrorPage,
@@ -13,9 +12,8 @@ import {
   ContactPage,
   GalleryPage,
   ArticlePage,
-} from './Pages';
-// Helpers
-import ScrollToTop from './Utils/helpers';
+} from '../../Pages';
+import ScrollToTop from '../../Utils/helpers';
 
 function App() {
   return (

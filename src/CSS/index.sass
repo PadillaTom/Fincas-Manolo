@@ -104,6 +104,12 @@ button
   color: $MainColor
   text-align: center
   padding-top: 0.7rem
+.main-desc
+  font-family: $FontTexts
+  letter-spacing: 1.2px
+  text-align: center
+  margin: 3rem 0rem
+
 
 
 
@@ -623,6 +629,87 @@ img
 /*  ::::: About PAGE :::::  */
 .aboutSect
   position: relative
+.about-data
+  margin: 2rem 0rem
+  width: 100%
+  height: 60vh
+  position: relative
+  border-top: 1px solid $CTAGold
+  border-bottom: 1px solid $CTAGold
+  img
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover       
+  &::before     
+    content: " "
+    height: 100%
+    width: 100%
+    background: #ffffff
+    opacity: 0.25
+    position: absolute
+    top: 0
+    left: 0 
+    z-index: 2 
+  .location
+    width: 80%
+    margin: 0 auto
+    z-index: 3
+    color: #000
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    .location-data
+      text-align: center
+      margin-bottom: 1.5rem
+      h2
+        color: $SubtitleColor2
+        letter-spacing: 2px        
+        text-transform: uppercase
+        white-space: nowrap
+        padding: 0.2rem 0rem
+      p
+        font-family: $FontTexts
+        color: #505050
+        letter-spacing: 0.7px
+        line-height: 1.2
+        font-size: 1rem
+.cifras
+  display: grid
+  grid-template-columns: repeat(2,1fr)
+  grid-template-rows: repeat(3,1fr)
+  place-items: center
+  text-align: center
+  width: 90%
+  margin: 0 auto
+  margin-bottom: 2rem
+  background: #f2f2f2
+  box-shadow: 0px 0px 18px #b8b8b869 
+  border-radius: 0.5rem
+  .cifras-data
+    padding: 1.2rem
+    border: 0.5px solid #dddddd44
+    width: 100%
+    height: 100%
+    h2
+      color: $CTAGold
+      letter-spacing: 1.3px
+      font-size: 2rem
+      margin-bottom: 0.2rem
+    p
+      font-family: $FontTexts
+      letter-spacing: 1px
+      width: 90%
+      margin: 0 auto
+
+
+    
+
+
+
 
 /*  ::::: Products PAGE :::::  */
 .displayer

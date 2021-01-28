@@ -1,7 +1,8 @@
 import React from 'react';
-import { useProductsContext } from '../Context/products_context';
+import { useProductsContext } from '../../Context/products_context';
 // Components:
-import { Loading, Error, ProductsCard } from '../Components';
+import { Loading, Error } from '../Shared';
+import { ProductsCard } from '../Featured Products';
 
 const ProductsFeatured = () => {
   const {

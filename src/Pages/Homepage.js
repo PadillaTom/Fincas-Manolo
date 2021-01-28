@@ -6,10 +6,10 @@ import {
   ServicesNew,
   PromoProducts,
   ProductsCategories,
-  ProductsFeatured,
   Articles,
   Reviews,
 } from '../Components';
+import { ProductsFeatured } from '../Components/Featured Products';
 
 const Homepage = () => {
   return (

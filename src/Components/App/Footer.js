@@ -5,8 +5,9 @@ import {
   AiOutlineInstagram,
   AiOutlineTwitter,
 } from 'react-icons/ai';
+
 // Data:
-import { links } from '../Utils/constants';
+import { links } from '../../Utils/constants';
 
 const Footer = () => {
   return (

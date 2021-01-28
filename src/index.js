@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { App } from './Components/App';
 import './CSS/index.css';
 // Context
 import { ProductsProvider } from './Context/products_context';
