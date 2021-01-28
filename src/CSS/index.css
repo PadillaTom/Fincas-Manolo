@@ -971,7 +971,8 @@ img {
       margin-top: 0.5rem;
       font-size: 1.1rem;
       text-align: center;
-      backgorund: #fff; }
+      background: transparent;
+      padding: 0.3rem 0rem; }
     .contact-form .singleInput input::placeholder {
       opacity: 0.3;
       font-weight: 300;
@@ -986,7 +987,8 @@ img {
       margin-top: 0.5rem;
       font-size: 1.1rem;
       text-align: center;
-      backgorund: #fff; }
+      backgorund: transparent;
+      padding: 0.3rem 0rem; }
     .contact-form .singleInput textarea::placeholder {
       opacity: 0.3;
       font-weight: 500;

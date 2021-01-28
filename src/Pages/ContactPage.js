@@ -1,5 +1,4 @@
 import React from 'react';
-import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 
 const ContactPage = () => {
   const contactImg =
