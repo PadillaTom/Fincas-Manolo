@@ -1,5 +1,10 @@
 // Queries
 @import "include-media.scss"
+
+// How to use:
+// @include media (">=phone")
+
+
 //  
 // ::::::::::::::::::::::::
 // ---> FONTS <---
@@ -50,8 +55,6 @@ $MaxWidth: 1200px
 html
   max-width: 100vw
   background-color: $MainWhite
-  @include media (">phone")
-    background-color: red
 ul 
   list-style: none
 a 
@@ -199,6 +202,9 @@ button
   background: $SecondaryWhite
   z-index: 5
   box-shadow: 0 2px 6px 0 #5c5c5c33
+  // Queries
+
+
 .nav-center
   width: 90%
   margin: 0 auto
