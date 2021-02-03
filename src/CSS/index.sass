@@ -233,7 +233,6 @@ button
       width: 12rem
       @include media (">tablet")
         width: 16rem
-
 .desktop-links
   display: none
   @include media (">laptop")  
@@ -415,27 +414,32 @@ button
 .servicesContainer
   padding: 1.5rem 0rem
 .serviciosArtContainer
+  margin: 0 auto
+  width: 90%
   margin-top: 1.5rem
 .singleServ-container
-  display: flex
-  align-items: center
-  justify-content: center
-  width: 92%
+  display: grid
+  grid-template-columns: repeat(2,1fr)
+  width: 100%
   margin: 0 auto
   margin-bottom: 1rem
-.serv-der
-  h4
-    color: $CTAGold
-    letter-spacing: 1.2px
-    margin-bottom: 0.3rem
-    font-family: $FontMain
-    font-weight: 500
-  p
-    font-family: $Gray1
-    letter-spacing: 0.5px
-    line-height: 1.3
-    font-family: $FontTexts
-    font-size: 0.9rem
+  .serv-izq
+    width: 100%
+    img
+      width: 100%    
+  .serv-der
+    h4
+      color: $CTAGold
+      letter-spacing: 1.2px
+      margin-bottom: 0.3rem
+      font-family: $FontMain
+      font-weight: 500
+    p
+      font-family: $Gray1
+      letter-spacing: 0.5px
+      line-height: 1.3
+      font-family: $FontTexts
+      font-size: 0.9rem
 
 /*  ::::: Promoted Products :::::  */
 .promoContainer
