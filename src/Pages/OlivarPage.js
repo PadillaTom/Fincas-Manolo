@@ -21,10 +21,8 @@ const OlivarPage = () => {
         <p className='main-desc'>{data1.desc}</p>
       </div>
       {/* Sections */}
-      <Link to='/productos/aceite250'>
-        <div className='olivarCTAContainer'>
-          <h2>Nuestros Productos</h2>
-        </div>
+      <Link to='/productos/aceite250' className='olivarCTAContainer'>
+        Nuestros Productos
       </Link>
       {/* Premium */}
       <article className='oliva-second'>

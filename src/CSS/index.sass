@@ -132,6 +132,8 @@ button
   color: $MainColor
   text-align: center
   padding-top: 0.7rem
+  @include media (">=tablet")
+    font-size: 3rem
 .page-subtitle
   text-align: center
   color: #666666 
@@ -143,6 +145,14 @@ button
   letter-spacing: 1.2px
   text-align: center
   margin: 2.5rem 0rem
+  @include media (">=tablet")
+    font-size: 1.6rem
+    line-height: 1.3
+  @include media (">=laptop")
+    width: 80%
+    margin: 2.5rem auto
+  @include media (">=desktop")
+    width: 75%
 
 
 
@@ -365,7 +375,7 @@ button
   text-align: center
   overflow: hidden
   @include media (">=tablet")
-    height: 85vh
+    height: 80vh
   .heroTitle  
     font-size: 7rem
     font-weight: 700
@@ -402,6 +412,7 @@ button
     width: 35rem
   @include media (">=desktop")  
     width: 40rem
+    left: 48%    
   @include media (">=LGdesktop")  
     width: 45rem
 .heroDesc
@@ -465,23 +476,22 @@ button
   width: 90%
   margin-top: 1.5rem
   display: flex
-  flex-wrap: wrap
+  flex-wrap: wrap  
 .singleServ-container
   display: grid
   grid-template-columns: repeat(2,1fr)
   width: 100%
   margin: 0 auto
   margin-bottom: 1rem
-  @include media (">=laptop")
+  height: auto 
+  @include media (">=tablet")
+    width: 44%
+    grid-template-columns: none
+    grid-template-rows: repeat(2,1fr)
+    place-items: center
     text-align: center
-    width: 45%
-    display: flex  
-    flex-direction: column
-    flex-wrap: wrap
-    justify-content: space-between 
-    align-items: center
-  @include media (">=desktop") 
-    width: 20%
+  @include media (">=laptop")
+    width: 24%
   .serv-izq
     width: 100%
     img
@@ -824,26 +834,28 @@ button
   margin: 2rem 0rem
   width: 100%
   height: 60vh
-  position: relative
-  border-top: 1px solid $CTAGold
-  border-bottom: 1px solid $CTAGold
+  position: relative   
   img
     position: absolute
     top: 0
     left: 0
-    width: 100%
+    width: 100%  
     height: 100%
-    object-fit: cover       
+    object-fit: cover  
+    border-top: 1px solid $CTAGold
+    border-bottom: 1px solid $CTAGold 
+    margin: 0 auto   
   &::before     
     content: " "
     height: 100%
-    width: 100%
+    min-nwidth: 100%
     background: #ffffff
     opacity: 0.25
     position: absolute
     top: 0
     left: 0 
     z-index: 2 
+    margin: 0 auto
   .location
     width: 80%
     margin: 0 auto
@@ -862,12 +874,16 @@ button
         text-transform: uppercase
         white-space: nowrap
         padding: 0.2rem 0rem
+        @include media (">=tablet")
+          font-size: 2rem
       p
         font-family: $FontTexts
         color: #505050
         letter-spacing: 0.7px
         line-height: 1.2
-        font-size: 1rem
+        font-size: 1rem   
+        @include media (">=tablet")
+          font-size: 1.4rem    
 .cifras
   display: grid
   grid-template-columns: repeat(2,1fr)
@@ -878,7 +894,12 @@ button
   margin: 0 auto
   margin-bottom: 2rem
   background: #ffffff
-  box-shadow: 0px 0px 18px #b8b8b887   
+  box-shadow: 0px 0px 18px #b8b8b887
+  @include media (">=tablet")
+    margin: 4rem auto
+  @include media (">=desktop")
+    width: 60%
+    
   .cifras-data
     padding: 1.2rem
     border: 0.5px solid #dddddd74
@@ -889,62 +910,80 @@ button
       letter-spacing: 1.3px
       font-size: 2rem
       margin-bottom: 0.2rem
+      @include media (">=tablet")
+        font-size: 4rem
+        letter-spacing: 2px
     p
       font-family: $FontTexts
       letter-spacing: 1px
       width: 90%
       margin: 0 auto
+      @include media (">=tablet")
+        font-size: 1.4rem
 
 /*  ::::: El Olivar PAGE :::::  */
 .olivarSect
-  position: relative
+  position: relative 
 .olivarPng
   position: absolute
   z-index: -1
   top: 43%
   left: 50%
   transform: translate(-50%,-40%)
-  opacity: 0.3
+  opacity: 0.17
   width: 75% 
 .olivarCTAContainer
-  width: 100%
-  height: 5rem
+  width: 100%  
+  margin: 0 auto
+  display: block
+  padding: 2rem 0rem
   text-align: center
   background: #fff
-  display: flex
-  justify-content: center
-  align-items: center
   border-top: 1px solid black
   border-bottom: 1px solid black
   box-shadow: 0px 0px 6px #5252528c
   color: $Gray1
+  font-family: $FontTitles
+  letter-spacing: 2px
   cursor: pointer
-  transition: $MainTrans  
+  transition: $MainTrans 
+  font-size: 1.4rem
+  @include media (">=tablet")     
+    font-size: 2.2rem
+    letter-spacing: 2.5px
   &:hover
-    color: $SubtitleColor2
-  h2
-    font-family: $FontTitles
-    letter-spacing: 2px
+    color: $SubtitleColor2  
+
 .oliva-second 
-  width: 90%
+  width: 85%
   margin: 3rem auto
   text-align: center
-
+  @include media (">=tablet")
+    width: 70%
   img
     border: 3px solid $CTAGold
     border-radius: 0.5rem
     object-fit: cover
+    width: 100%
+    height: 13rem
+    @include media (">=tablet")
+      height: 25rem
+      width: 70%
   h2  
     color: $SubtitleColor2
     font-family: $FontMain
     letter-spacing: 1.5px
     padding: 1rem 0rem
+    @include media (">=tablet")
+      font-size: 1.7rem
   p
     font-family: $FontTexts
     letter-spacing: 1px
     width: 90%
     margin: 0 auto
-    line-height: 1.4  
+    line-height: 1.4 
+    @include media (">=tablet") 
+      font-size: 1.3rem
 
 /*  ::::: Products PAGE :::::  */
 .displayer
@@ -952,6 +991,7 @@ button
   height: auto
   margin: 0 auto
   margin-top: 1rem
+  padding-bottom: 4rem
 
 // Displayer
 .displayerContainer 
@@ -965,6 +1005,13 @@ button
   height: 22rem
   border: 3px solid lightgray
   border-radius: 0.5rem
+  margin: 0 auto
+  @include media (">=tablet")
+    widht: 70%
+    height: 30rem
+  @include media (">=laptop")
+    width: 65%
+    height: 25rem
   img
     border-radius: 0.3rem
     width: 100%
@@ -976,22 +1023,29 @@ button
     width: 70%
     margin: 0 auto
     margin-top: 0.5rem
-    text-align: center  
+    text-align: center      
     h2  
       font-family: $FontTitles
       letter-spacing: 1.5px
       color: $TitleColor
+      @include media (">=tablet")
+        font-size: 2rem
     p
       margin-top: 0.2rem
       color: $CTAInactive
       letter-spacing: 3px
-      text-transform: uppercase    
+      text-transform: uppercase 
+      @include media (">=tablet")
+        font-size: 1.5rem   
   .main-desc
     width: 87%
     margin: 0 auto
     padding: 1rem 0rem
     font-family: $FontTexts
     letter-spacing: 1.1px
+    @include media (">=tablet")
+      width: 85%    
+
   .main-peso-price
     width: 60%
     margin: 0 auto
@@ -1005,11 +1059,17 @@ button
     span
       color: $SubtitleColor2
       letter-spacing: 1px
+      @include media (">=tablet")
+        font-size: 1.3rem
+
 .more-prods
   color: $CTAGold
   letter-spacing: 2px
   text-align: center
   margin: 1.2rem 0rem
+  @include media (">=tablet")
+    font-size: 2rem
+
 // Carousel
 .carouselSpace
   width: auto  
@@ -1018,7 +1078,7 @@ button
   height: auto
   display: flex
   flex-wrap: wrap
-  padding-bottom: 2rem
+  padding-bottom: 2rem  
 .carousel-card
   width: 45%
   height: auto
@@ -1027,6 +1087,12 @@ button
   border: 1px solid lightgray
   box-shadow: 0px 0px 12px #aaaaaa60
   position: relative
+  @include media (">=tablet")
+    width: 32%
+  @include media (">=laptop")
+    width: 22%
+  @include media (">=desktop")
+    width: 18%
 .carcard-img 
   width: 100%
   height: 100%
@@ -1081,11 +1147,17 @@ button
   
 
 /*  ::::: Contact PAGE :::::  */
+.contactSect
+  padding-bottom: 3rem
 .contact-banner 
   width: 100%
   height: 35vh
   margin-top: 2rem
   position: relative 
+  @include media (">=tablet")
+    height: 40vh
+  @include media (">=desktop")
+    height: 50vh
   img
     position: absolute
     top: 0
@@ -1101,7 +1173,7 @@ button
       top: 0
       left: 0
       background: black
-      opacity: 0.6
+      opacity: 0.65
       z-index: 1
 .banner-info  
   z-index: 2
@@ -1123,11 +1195,22 @@ button
     font-size: 1.4rem
     letter-spacing: 1.5px
     font-weight: 600
+    @include media (">=tablet")
+      font-size: 2rem
+      letter-spacing: 2px
+    @include media (">=desktop")
+      font-size: 2.5rem
+      letter-spacing: 3px
+
 // Form
 .formContainer  
   width: 95%
-  margin: 0 auto
+  margin: 3rem auto
   padding: 2rem 0rem
+  @include media (">=tablet")
+    width: 80%
+  @include media (">=desktop")
+    width: 50%
 .contact-form
   width: 100%
   height: 100%
@@ -1144,6 +1227,8 @@ button
       font-size: 1.2rem
       letter-spacing: 1px
       color: $SubtitleColor2
+      @include media (">=tablet")
+        font-size: 1.5rem
     input
       width: 80%
       margin: 0 auto
@@ -1177,10 +1262,11 @@ button
       letter-spacing: 1.4px
       font-size: 1rem
       font-family: $FontTexts 
+
 .form-cta
   width: 100%  
   padding: 1rem 0rem
-  background: #e2e2e2  
+  background: $SubtitleColor2
   font-family: $FontMain
   letter-spacing: 3px
   font-size: 1.2rem
@@ -1188,9 +1274,12 @@ button
   font-weight: 400
   cursor: pointer
   transition: $MainTrans
-  border: 1px solid #bdbdbd  
+  border: 1px solid #bdbdbd 
+  color: white 
   &:hover
     background: $CTAGold
+  @include media (">=tablet")
+    font-size: 1.5rem
 
 
 /*  ::::: Footer :::::  */

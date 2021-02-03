@@ -92,6 +92,9 @@ button {
   color: #d5b13a;
   text-align: center;
   padding-top: 0.7rem; }
+  @media (min-width: 768px) {
+    .page-title {
+      font-size: 3rem; } }
 
 .page-subtitle {
   text-align: center;
@@ -105,6 +108,17 @@ button {
   letter-spacing: 1.2px;
   text-align: center;
   margin: 2.5rem 0rem; }
+  @media (min-width: 768px) {
+    .main-desc {
+      font-size: 1.6rem;
+      line-height: 1.3; } }
+  @media (min-width: 992px) {
+    .main-desc {
+      width: 80%;
+      margin: 2.5rem auto; } }
+  @media (min-width: 1250px) {
+    .main-desc {
+      width: 75%; } }
 
 /* --------------------------------------------------- */
 /* --------------------- MAIN APP -------------------- */
@@ -334,7 +348,7 @@ button {
   overflow: hidden; }
   @media (min-width: 768px) {
     .heroContainer {
-      height: 85vh; } }
+      height: 80vh; } }
   .heroContainer .heroTitle {
     font-size: 7rem;
     font-weight: 700;
@@ -379,7 +393,8 @@ button {
       width: 35rem; } }
   @media (min-width: 1250px) {
     .heroOlive {
-      width: 40rem; } }
+      width: 40rem;
+      left: 48%; } }
   @media (min-width: 1700px) {
     .heroOlive {
       width: 45rem; } }
@@ -460,19 +475,18 @@ button {
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  height: auto; }
+  @media (min-width: 768px) {
+    .singleServ-container {
+      width: 44%;
+      grid-template-columns: none;
+      grid-template-rows: repeat(2, 1fr);
+      place-items: center;
+      text-align: center; } }
   @media (min-width: 992px) {
     .singleServ-container {
-      text-align: center;
-      width: 45%;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center; } }
-  @media (min-width: 1250px) {
-    .singleServ-container {
-      width: 20%; } }
+      width: 24%; } }
   .singleServ-container .serv-izq {
     width: 100%; }
     .singleServ-container .serv-izq img {
@@ -849,26 +863,28 @@ button {
   margin: 2rem 0rem;
   width: 100%;
   height: 60vh;
-  position: relative;
-  border-top: 1px solid #d5b13a;
-  border-bottom: 1px solid #d5b13a; }
+  position: relative; }
   .about-data img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    border-top: 1px solid #d5b13a;
+    border-bottom: 1px solid #d5b13a;
+    margin: 0 auto; }
   .about-data::before {
     content: " ";
     height: 100%;
-    width: 100%;
+    min-nwidth: 100%;
     background: #ffffff;
     opacity: 0.25;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2; }
+    z-index: 2;
+    margin: 0 auto; }
   .about-data .location {
     width: 80%;
     margin: 0 auto;
@@ -887,12 +903,18 @@ button {
         text-transform: uppercase;
         white-space: nowrap;
         padding: 0.2rem 0rem; }
+        @media (min-width: 768px) {
+          .about-data .location .location-data h2 {
+            font-size: 2rem; } }
       .about-data .location .location-data p {
         font-family: "Raleway", sans-serif;
         color: #505050;
         letter-spacing: 0.7px;
         line-height: 1.2;
         font-size: 1rem; }
+        @media (min-width: 768px) {
+          .about-data .location .location-data p {
+            font-size: 1.4rem; } }
 
 .cifras {
   display: grid;
@@ -905,6 +927,12 @@ button {
   margin-bottom: 2rem;
   background: #ffffff;
   box-shadow: 0px 0px 18px #b8b8b887; }
+  @media (min-width: 768px) {
+    .cifras {
+      margin: 4rem auto; } }
+  @media (min-width: 1250px) {
+    .cifras {
+      width: 60%; } }
   .cifras .cifras-data {
     padding: 1.2rem;
     border: 0.5px solid #dddddd74;
@@ -915,11 +943,18 @@ button {
       letter-spacing: 1.3px;
       font-size: 2rem;
       margin-bottom: 0.2rem; }
+      @media (min-width: 768px) {
+        .cifras .cifras-data h2 {
+          font-size: 4rem;
+          letter-spacing: 2px; } }
     .cifras .cifras-data p {
       font-family: "Raleway", sans-serif;
       letter-spacing: 1px;
       width: 90%;
       margin: 0 auto; }
+      @media (min-width: 768px) {
+        .cifras .cifras-data p {
+          font-size: 1.4rem; } }
 
 /*  ::::: El Olivar PAGE :::::  */
 .olivarSect {
@@ -931,55 +966,74 @@ button {
   top: 43%;
   left: 50%;
   transform: translate(-50%, -40%);
-  opacity: 0.3;
+  opacity: 0.17;
   width: 75%; }
 
 .olivarCTAContainer {
   width: 100%;
-  height: 5rem;
+  margin: 0 auto;
+  display: block;
+  padding: 2rem 0rem;
   text-align: center;
   background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   box-shadow: 0px 0px 6px #5252528c;
   color: #828282;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
   cursor: pointer;
-  transition: 0.25s linear all; }
+  transition: 0.25s linear all;
+  font-size: 1.4rem; }
+  @media (min-width: 768px) {
+    .olivarCTAContainer {
+      font-size: 2.2rem;
+      letter-spacing: 2.5px; } }
   .olivarCTAContainer:hover {
     color: #8c1212; }
-  .olivarCTAContainer h2 {
-    font-family: "Playfair Display", serif;
-    letter-spacing: 2px; }
 
 .oliva-second {
-  width: 90%;
+  width: 85%;
   margin: 3rem auto;
   text-align: center; }
+  @media (min-width: 768px) {
+    .oliva-second {
+      width: 70%; } }
   .oliva-second img {
     border: 3px solid #d5b13a;
     border-radius: 0.5rem;
-    object-fit: cover; }
+    object-fit: cover;
+    width: 100%;
+    height: 13rem; }
+    @media (min-width: 768px) {
+      .oliva-second img {
+        height: 25rem;
+        width: 70%; } }
   .oliva-second h2 {
     color: #8c1212;
     font-family: "Roboto Mono", monospace;
     letter-spacing: 1.5px;
     padding: 1rem 0rem; }
+    @media (min-width: 768px) {
+      .oliva-second h2 {
+        font-size: 1.7rem; } }
   .oliva-second p {
     font-family: "Raleway", sans-serif;
     letter-spacing: 1px;
     width: 90%;
     margin: 0 auto;
     line-height: 1.4; }
+    @media (min-width: 768px) {
+      .oliva-second p {
+        font-size: 1.3rem; } }
 
 /*  ::::: Products PAGE :::::  */
 .displayer {
   width: 97%;
   height: auto;
   margin: 0 auto;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  padding-bottom: 4rem; }
 
 .displayerContainer {
   display: flex;
@@ -992,7 +1046,16 @@ button {
   width: 90%;
   height: 22rem;
   border: 3px solid lightgray;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .displayer-left {
+      widht: 70%;
+      height: 30rem; } }
+  @media (min-width: 992px) {
+    .displayer-left {
+      width: 65%;
+      height: 25rem; } }
   .displayer-left img {
     border-radius: 0.3rem;
     width: 100%;
@@ -1010,17 +1073,26 @@ button {
       font-family: "Playfair Display", serif;
       letter-spacing: 1.5px;
       color: #2a2a2a; }
+      @media (min-width: 768px) {
+        .displayer-right .main-title h2 {
+          font-size: 2rem; } }
     .displayer-right .main-title p {
       margin-top: 0.2rem;
       color: #c5c5c5;
       letter-spacing: 3px;
       text-transform: uppercase; }
+      @media (min-width: 768px) {
+        .displayer-right .main-title p {
+          font-size: 1.5rem; } }
   .displayer-right .main-desc {
     width: 87%;
     margin: 0 auto;
     padding: 1rem 0rem;
     font-family: "Raleway", sans-serif;
     letter-spacing: 1.1px; }
+    @media (min-width: 768px) {
+      .displayer-right .main-desc {
+        width: 85%; } }
   .displayer-right .main-peso-price {
     width: 60%;
     margin: 0 auto;
@@ -1034,12 +1106,18 @@ button {
     .displayer-right .main-peso-price span {
       color: #8c1212;
       letter-spacing: 1px; }
+      @media (min-width: 768px) {
+        .displayer-right .main-peso-price span {
+          font-size: 1.3rem; } }
 
 .more-prods {
   color: #d5b13a;
   letter-spacing: 2px;
   text-align: center;
   margin: 1.2rem 0rem; }
+  @media (min-width: 768px) {
+    .more-prods {
+      font-size: 2rem; } }
 
 .carouselSpace {
   width: auto; }
@@ -1059,6 +1137,15 @@ button {
   border: 1px solid lightgray;
   box-shadow: 0px 0px 12px #aaaaaa60;
   position: relative; }
+  @media (min-width: 768px) {
+    .carousel-card {
+      width: 32%; } }
+  @media (min-width: 992px) {
+    .carousel-card {
+      width: 22%; } }
+  @media (min-width: 1250px) {
+    .carousel-card {
+      width: 18%; } }
 
 .carcard-img {
   width: 100%;
@@ -1115,11 +1202,20 @@ button {
     margin: 0 auto; }
 
 /*  ::::: Contact PAGE :::::  */
+.contactSect {
+  padding-bottom: 3rem; }
+
 .contact-banner {
   width: 100%;
   height: 35vh;
   margin-top: 2rem;
   position: relative; }
+  @media (min-width: 768px) {
+    .contact-banner {
+      height: 40vh; } }
+  @media (min-width: 1250px) {
+    .contact-banner {
+      height: 50vh; } }
   .contact-banner img {
     position: absolute;
     top: 0;
@@ -1135,7 +1231,7 @@ button {
     top: 0;
     left: 0;
     background: black;
-    opacity: 0.6;
+    opacity: 0.65;
     z-index: 1; }
 
 .banner-info {
@@ -1158,11 +1254,25 @@ button {
     font-size: 1.4rem;
     letter-spacing: 1.5px;
     font-weight: 600; }
+    @media (min-width: 768px) {
+      .banner-info p {
+        font-size: 2rem;
+        letter-spacing: 2px; } }
+    @media (min-width: 1250px) {
+      .banner-info p {
+        font-size: 2.5rem;
+        letter-spacing: 3px; } }
 
 .formContainer {
   width: 95%;
-  margin: 0 auto;
+  margin: 3rem auto;
   padding: 2rem 0rem; }
+  @media (min-width: 768px) {
+    .formContainer {
+      width: 80%; } }
+  @media (min-width: 1250px) {
+    .formContainer {
+      width: 50%; } }
 
 .contact-form {
   width: 100%;
@@ -1180,6 +1290,9 @@ button {
       font-size: 1.2rem;
       letter-spacing: 1px;
       color: #8c1212; }
+      @media (min-width: 768px) {
+        .contact-form .singleInput label {
+          font-size: 1.5rem; } }
     .contact-form .singleInput input {
       width: 80%;
       margin: 0 auto;
@@ -1217,7 +1330,7 @@ button {
 .form-cta {
   width: 100%;
   padding: 1rem 0rem;
-  background: #e2e2e2;
+  background: #8c1212;
   font-family: "Roboto Mono", monospace;
   letter-spacing: 3px;
   font-size: 1.2rem;
@@ -1225,9 +1338,13 @@ button {
   font-weight: 400;
   cursor: pointer;
   transition: 0.25s linear all;
-  border: 1px solid #bdbdbd; }
+  border: 1px solid #bdbdbd;
+  color: white; }
   .form-cta:hover {
     background: #d5b13a; }
+  @media (min-width: 768px) {
+    .form-cta {
+      font-size: 1.5rem; } }
 
 /*  ::::: Footer :::::  */
 .footerContainer {
