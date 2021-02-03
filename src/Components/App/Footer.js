@@ -17,7 +17,6 @@ const Footer = () => {
           <div className='footer-section'>
             <h2>Mapa del sitio</h2>
             <hr />
-
             <ul className='footer-links'>
               {links.map((link) => {
                 const { id, name, url } = link;
@@ -52,6 +51,7 @@ const Footer = () => {
           </div>
         </div>
       </article>
+
       <div className='footer-dark'>
         <p>Todos los derechos reservados &copy; {new Date().getFullYear()}</p>
       </div>

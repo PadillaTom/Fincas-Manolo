@@ -7,21 +7,21 @@ import {
   PromoProducts,
   ProductsCategories,
   Articles,
-  Reviews,
 } from '../Components';
 import { ProductsFeatured } from '../Components/Featured Products';
 
 const Homepage = () => {
   return (
-    <div className='section home-sect'>
+    <>
       <HeroNew></HeroNew>
-      <ProductsCategories></ProductsCategories>
-      <PromoProducts></PromoProducts>
-      <ProductsFeatured></ProductsFeatured>
-      <ServicesNew></ServicesNew>
-      <Articles></Articles>
-      <Reviews></Reviews>
-    </div>
+      <div className='section home-sect'>
+        <ProductsCategories></ProductsCategories>
+        <PromoProducts></PromoProducts>
+        <ProductsFeatured></ProductsFeatured>
+        <ServicesNew></ServicesNew>
+        <Articles></Articles>
+      </div>
+    </>
   );
 };
 

@@ -11,10 +11,12 @@ const HeroNew = () => {
 
     tl.from('.hero-finc', 0.7, {
       delay: 1.1,
-      x: '170%',
+      x: '200%',
+      opacity: 0,
     })
       .from('.hero-man', 0.6, {
-        x: '-130%',
+        x: '-250%',
+        opacity: 0,
       })
       .from('.heroOlive', 1, {
         delay: 0,
@@ -27,7 +29,7 @@ const HeroNew = () => {
   }, []);
 
   return (
-    <section className='heroContainer'>
+    <div className='heroContainer'>
       <h1 className='heroTitle hero-finc'>Fincas</h1>
       <h1 className='heroTitle hero-man'>Manolo</h1>
       <img src={imgUrl} alt='Inicio' className='heroOlive' />
@@ -38,7 +40,7 @@ const HeroNew = () => {
           <button className='heroCta'>Explorar</button>
         </Link>
       </div>
-    </section>
+    </div>
   );
 };
 

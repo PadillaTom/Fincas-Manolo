@@ -75,9 +75,11 @@ button
 /* Sections */
 .section 
   width: 100% 
+  margin: 0 auto
   margin-top: 4rem
+  max-width: 1780px
   // Queries
-  @include media (">tablet")
+  @include media (">=tablet")
     margin-top: 5rem
   @include media (">=LGdesktop")
     margin-top: 6.5rem  
@@ -91,6 +93,9 @@ button
   letter-spacing: 0.7px
   font-size: 1.2rem
   text-transform: uppercase
+  @include media (">=tablet")
+    font-size: 2rem
+    letter-spacing: 1px
   span
     color: $Gray1
     letter-spacing: 1.5px
@@ -98,6 +103,9 @@ button
     opacity: 0.3
     margin-left: 1rem
     font-size: 1rem
+    @include media (">=tablet")
+      font-size: 1.5rem
+      letter-spacing: 2px
 
 /* CTA */
 .primary-cta    
@@ -208,7 +216,7 @@ button
   z-index: 5
   box-shadow: 0 2px 6px 0 #5c5c5c33
   // Queries
-  @include media (">tablet")
+  @include media (">=tablet")
     height: 5rem
   @include media (">=LGdesktop") 
     height: 6.5rem
@@ -226,16 +234,18 @@ button
     color: black
     cursor: pointer
     font-size: 1.3rem
-    @include media (">laptop")
+    @include media (">=laptop")
       display: none
   .nav-logo 
     img
       width: 12rem
-      @include media (">tablet")
+      @include media (">=tablet")
         width: 16rem
+      @include media (">=desktop")
+        width: 14rem
 .desktop-links
   display: none
-  @include media (">laptop")  
+  @include media (">=laptop")  
     display: block
   .desktop-link
     font-size: 1.2rem
@@ -247,7 +257,7 @@ button
     &:hover
       color: $SubtitleColor2
     @include media (">=LGdesktop") 
-      font-size: 1.7rem
+      font-size: 1.4rem
       letter-spacing: 1.1px
       margin-left: 2rem
 
@@ -344,40 +354,64 @@ button
 /*  ::::: Homepage :::::  */
 .home-sect 
   height: auto
+  margin-bottom: 4rem
 
 
 /*  ::::: HeroNew Component :::::  */
 .heroContainer
-  max-width: 100%
+  width: 100% 
   height: 80vh
   position: relative
   text-align: center
   overflow: hidden
-.heroTitle  
-  font-size: 7rem
-  font-weight: 700
-  text-transform: uppercase
-  opacity: 0.07  
-  position: absolute 
-.hero-finc  
-  top: 28%
-  left: -15%
-  transform: translateX(-15%)
-.hero-man
-  bottom: 28%
-  right: -50%  
+  @include media (">=tablet")
+    height: 85vh
+  .heroTitle  
+    font-size: 7rem
+    font-weight: 700
+    text-transform: uppercase
+    opacity: 0.07  
+    position: absolute 
+    @include media (">=tablet")
+      font-size: 10rem 
+    @include media (">=LGdesktop") 
+      font-size: 12rem  
+  .hero-finc  
+    top: 28%
+    left: -15%
+    transform: translateX(-15%) 
+    @include media (">=desktop") 
+      left: 0%        
+    @include media (">=LGdesktop") 
+      left: 10%        
+  .hero-man
+    bottom: 28%
+    right: 0%  
+    transform: translateX(50%)
+    @include media (">=desktop")
+      right: 15%  
+    @include media (">=LGdesktop")
+      right: 30%  
 .heroOlive
   position: absolute
   top: 0
   left: 45%
   transform: translateX(-50%)
   width: 29rem
+  @include media (">=tablet")
+    width: 35rem
+  @include media (">=desktop")  
+    width: 40rem
+  @include media (">=LGdesktop")  
+    width: 45rem
 .heroDesc
   position: absolute
   bottom: 15% 
   width: 100% 
-  background: rgba(0,0,0,0.45)
+  background: rgba(0,0,0,0.5)
   padding: 1.5rem 0rem
+  @include media (">=desktop")  
+    padding: 2rem
   h4
     margin-bottom: 0.25rem
     font-size: 1.7rem
@@ -387,10 +421,20 @@ button
     white-space: nowrap
     color: white
     font-weight: 500
+    @include media (">=tablet")
+      font-size: 2.1rem
+      letter-spacing: 2px
+    @include media (">=desktop")  
+      letter-spacing: 6px
   p
     font-size: 1.1rem
     letter-spacing: 1px
     color: white
+    @include media (">=tablet")
+      font-size: 1.5rem
+      letter-spacing: 1.3px
+    @include media (">=desktop")  
+      letter-spacing: 3px
 .heroCta 
   margin-top: 1.5rem
   padding: 0.3rem 2rem
@@ -409,6 +453,9 @@ button
   &:hover
     border: 1.5px solid $SubtitleColor2
     color: $SubtitleColor2
+  @include media (">=tablet")
+    font-size: 1.7rem
+    margin-top: 2rem
 
 /*  ::::: Services NEW :::::  */
 .servicesContainer
@@ -417,12 +464,24 @@ button
   margin: 0 auto
   width: 90%
   margin-top: 1.5rem
+  display: flex
+  flex-wrap: wrap
 .singleServ-container
   display: grid
   grid-template-columns: repeat(2,1fr)
   width: 100%
   margin: 0 auto
   margin-bottom: 1rem
+  @include media (">=laptop")
+    text-align: center
+    width: 45%
+    display: flex  
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: space-between 
+    align-items: center
+  @include media (">=desktop") 
+    width: 20%
   .serv-izq
     width: 100%
     img
@@ -431,26 +490,46 @@ button
     h4
       color: $CTAGold
       letter-spacing: 1.2px
-      margin-bottom: 0.3rem
+      margin-bottom: 0.5rem
       font-family: $FontMain
       font-weight: 500
+      @include media (">=tablet")
+        font-size: 1.8rem
+        letter-spacing: 1.5px
+        margin-bottom: 1rem
     p
       font-family: $Gray1
       letter-spacing: 0.5px
       line-height: 1.3
       font-family: $FontTexts
       font-size: 0.9rem
+      @include media (">=tablet")
+        font-size: 1.3rem
+        letter-spacing: 1.2px
 
 /*  ::::: Promoted Products :::::  */
 .promoContainer
   width: 97%
   margin: 0 auto 
   padding: 1.5rem 0rem
+  padding-top: 0rem
+  @include media (">=tablet")
+    width: 95%
+  @include media (">=laptop")
+    display: grid    
+    grid-template-columns: 1fr 1fr
+    column-gap: 1rem
 .promo
   width: 100%
   height: 17rem
   margin: 1.5rem 0rem
   position: relative
+  @include media (">=tablet")
+    height: 20rem
+  @include media (">=laptop")
+    height: 28rem
+    border: 3px solid lightgray
+    border-radius: 0.35rem
   img
     width: 100%
     height: 100%
@@ -461,19 +540,28 @@ button
     height: 100%
     width: 100%
     background: black
-    opacity: 0.35
+    opacity: 0.4
     position: absolute
     top: 0
     left: 0  
     border-radius: 0.25rem
 .promo-info
+  height: 75%
+  width: 90% 
   position: absolute
-  top: 20%
-  left: 20%
-  transform: translate(-20%,-20%)
-  text-align: left  
-  height: 80%
-  margin-top: 2rem
+  top: 50%
+  left: 50% 
+  transform: translate(-50%,-50%)
+  text-align: center
+  display: grid
+  grid-template-rows: repeat(3,1fr)
+  place-items: center
+  gap: none    
+  @include media (">=tablet")
+    text-align: center   
+  @include media (">=laptop")
+    width: 80%
+    margin: 0 auto    
   h2
     font-size: 1.6rem
     letter-spacing: 1.8px
@@ -481,21 +569,30 @@ button
     font-family: $FontTitles    
     color: $MainWhite
     margin-bottom: 1.2rem
+    @include media (">=tablet")
+      font-size: 1.8rem
+      letter-spacing: 2.5px
   p
-    font-size: 1.1rem
+    font-size: 1.3rem
     letter-spacing: 0.7px
-    color: $SecondaryWhite    
-  button    
-    position: absolute
-    bottom: 15%
-    color: $SubtitleColor2
+    color: $SecondaryWhite  
+    @include media (">=tablet")
+      font-size: 1.5rem
+      letter-spacing: 1.5px  
+  button 
+    color: black
     letter-spacing: 1.3px
-    background: #ffffff
+    background: white
+    border: 1px solid black
     text-transform: uppercase
     font-weight: 600
     padding: 0.5rem 1.5rem
     cursor: pointer
-    transition: $MainTrans    
+    transition: $MainTrans 
+    margin-top: 20%   
+    @include media (">=tablet")
+      font-size: 1.2rem
+      letter-spacing: 2px  
 
 /*  ::::: Products Categories :::::  */
 .categoriesContainer
@@ -503,7 +600,7 @@ button
   background: $MainWhite  
   padding: 1.5rem 0rem
   opacity: 1
-.filtros-icons  
+.categories-icons  
   display: grid
   grid-template-columns: repeat(2, 1fr)
   grid-template-rows: repeat(2, 1fr)
@@ -512,7 +609,15 @@ button
   gap: 1.5rem 0.5rem
   width: 98%  
   margin: 1.2rem auto
-.single-icon
+  @include media (">=tablet")
+    grid-template-columns: repeat(2,18rem)
+  @include media (">=laptop")
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: none
+  @include media (">=desktop")
+    grid-template-columns: repeat(4, 15rem)
+    gap: 0  
+.singleCat-icon
   width: 90% 
   height: 90%
   display: flex
@@ -524,6 +629,9 @@ button
   &:hover
     p
       color: $SubtitleColor2
+  @include media (">=tablet")
+    width: 100%
+    height: 100%
   img
     flex: 1
     margin: 0 auto
@@ -542,6 +650,16 @@ button
     font-weight: 500
     color: $FontSecColor
     transition: $MainTrans
+    @include media (">=tablet")
+      font-size: 1.7rem
+      letter-spacing: 1px
+    @include media (">=desktop")
+      letter-spacing: 2px
+      font-size: 1.8rem
+    @include media (">=LGdesktop")
+      letter-spacing: 2.2px
+      font-size: 2rem
+  
 
 /*  ::::: Articles :::::  */
 .articlesContainer
@@ -551,6 +669,9 @@ button
   padding-top: 1.7rem
   width: 95%
   margin: 0 auto
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
 .article-card
   width: 100%
   border: 1px solid lightgray
@@ -559,8 +680,24 @@ button
   text-align: center
   place-items: center
   box-shadow: 1px 1px 6px #94949474
+  margin: 0 auto
+  margin-bottom: 1rem
+  @include media (">=tablet")
+    width: 90%
+  @include media (">=laptop")
+    width: 45%
 .article-img
   position: relative
+  .article-img-title
+    padding: 1.2rem 0rem
+    background: $MainBlack
+    opacity: 0.8
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100% 
+    @include media (">=tablet")
+      padding: 1.4rem 0rem
   h2
     position: absolute
     bottom: 0
@@ -572,28 +709,26 @@ button
     letter-spacing: 1.2px
     font-family: $FontMain
     z-index: 2
+    @include media (">=tablet")
+      font-size: 2rem
   img
     width: 100%
     height: 100%
     object-fit: cover
-.article-img-title
-  padding: 1.2rem 0rem
-  background: $MainBlack
-  opacity: 0.8
-  position: absolute
-  bottom: 0
-  left: 0
-  width: 100% 
+
 .article-desc
   width: 85%
   font-family: $FontTexts
   line-height: 1.4
   letter-spacing: 1px
   padding: 1rem 0rem
-  button
-    font-size: 1rem
-    letter-spacing: 2.5px
-    padding-top: 1.2rem
+  font-size: 1rem
+  @include media (">=tablet")
+    font-size: 1.3rem
+  p 
+    margin-bottom: 1rem
+  a
+    letter-spacing: 2.5px    
     cursor: pointer
     transition: $MainTrans
     color: $SubtitleColor2
@@ -606,75 +741,76 @@ button
 .productsCard-container
   padding-top: 1.2rem  
   margin: 0 auto 
-  display: grid
-  grid-template-columns: repeat(2,1fr)
-  gap: 0.75rem
+  display: flex
+  flex-wrap: wrap 
 .productCard  
-  width: 100%
+  width: 45%
+  margin: 0 auto
   height: 20rem
+  margin-bottom: 1rem
   box-shadow: 0px 0px 15px #cccccc74
   border-radius: 0.2rem
   display: grid
-  grid-template-rows: repeat(2,1fr)  
+  grid-template-rows: 60% 1fr 
   border: 1px solid lightgray
   &:hover
     box-shadow: 0px 0px 15px #b1b1b1af
     .cardDesc-container
       .desc-cta       
           background: $CTAGold
+  @include media (">=tablet")
+    height: 25rem
+  @include media (">=desktop")
+    height: 30rem
+    width: 30%
   .cardImg-container
     width: 100%
-    height: 10rem
+    height: 100%
     overflow: hidden
     transition: $MainTrans
     img 
       width: 100%
-      height: 100%
-      object-fit: cover
+      height: 97%
+      object-fit: cover      
       border-top-left-radius: 0.2rem    
       border-top-right-radius: 0.2rem
       transition: $MainTrans
   .cardDesc-container
+    text-align: center    
     width: 100%
-    height: 100%  
-    text-align: center
-    position: relative
+    height: 100%    
     display: flex
     flex-direction: column
     align-items: center
-    justify-content: space-around
+    justify-content: space-between
     border-bottom-left-radius: 0.2rem
     border-bottom-right-radius: 0.2rem
-    .desc-cont 
-      height: 80%
-      display: flex
-      flex-direction: column
-      justify-content: center
-      align-items: center
-      h2
-        font-size: 1.1rem 
-        font-family: $FontTexts
-        color: $SubtitleColor2
-      p
-        font-family: $FontTexts
-        letter-spacing: 1px
-        font-size: 0.9rem
-        width: 95%
-        margin: 0 auto
-        padding: 0.5rem 0rem
-    .desc-cta
-      display: flex
-      align-items: center
-      justify-content: center
+    h2
+      font-size: 1rem 
+      font-family: $FontTexts
+      color: $SubtitleColor2 
+      @include media (">=tablet")
+        font-size: 1.5rem
+    p
+      font-family: $FontTexts
+      letter-spacing: 1px
+      font-size: 0.9rem
+      width: 95%
+      margin: 0 auto
+      padding: 0.5rem 0rem
+      @include media (">=tablet")
+        font-size: 1.1rem
+    .desc-cta    
       width: 100%
-      height: 20%
+      padding: 0.5rem         
       background: #d8d8d856
       cursor: pointer
-      transition: $MainTrans
-      button
-        letter-spacing: 1.7px
-        font-family: $FontTitles        
-        font-size: 1rem      
+      transition: $MainTrans 
+      letter-spacing: 1.7px
+      font-family: $FontTitles        
+      font-size: 1rem
+      @include media (">=tablet")
+        font-size: 1.5rem
 
 /*  ::::: Rewvies :::::  */
 .reviewsContainer
@@ -1063,22 +1199,30 @@ button
   width: 100%
   background: #ededed9f
   padding-top: 0.5rem
+  hr
+    @include media (">=tablet")
+      width: 90%
+      margin: 0 auto
+    @include media (">=desktop")
+      width: 60%
+    
 .footer-center
   width: 95%
   margin: 0 auto
+
 .footer-light  
   padding-top: 1.5rem  
   width: 100%
-.footer-dark 
-  padding: 1.1rem 0rem
-  margin: 0 auto
-  text-align: center
-  background: #d1d1d1
-  color: #ffffff
-  letter-spacing: 1px  
-  font-family: $FontTexts
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between   
 .footer-section
   text-align: center
+  width: 100% 
+  @include media (">=laptop")
+    width: 45%
+    margin: 0 auto
+    margin-bottom: 2rem
   h2
     font-family: $FontTexts
     font-size: 1.2rem
@@ -1086,6 +1230,9 @@ button
     text-transform: uppercase
     margin-bottom: 0.5rem
     color: #a3a3a3
+    @include media (">=tablet")
+      font-size: 1.7rem
+  
 // Links
 .footer-links
   margin: 1rem 0rem
@@ -1098,6 +1245,8 @@ button
     transition: $MainTrans
     &:hover
       color: $SubtitleColor2
+    @include media (">=tablet")
+      font-size: 1.3rem  
 // Contact
 .footer-contact-item
   p
@@ -1109,6 +1258,9 @@ button
     transition: $MainTrans
     &:hover
       color: $SubtitleColor2
+    @include media (">=tablet")
+      font-size: 1.3rem
+
 // Social Icons
 .footer-social-icons 
   margin: 1rem 0rem   
@@ -1120,6 +1272,20 @@ button
     margin-right: 1.5rem
     &:hover
       color: $SubtitleColor2
+  @include media (">=tablet")
+    font-size: 2.5rem  
+
+.footer-dark 
+  padding: 1.1rem 0rem
+  margin: 0 auto
+  text-align: center
+  background: #d1d1d1
+  color: #3c3c3c
+  letter-spacing: 1px  
+  font-family: $FontTexts
+  @include media (">=tablet")
+    font-size: 1.2rem  
+  
   
   
 

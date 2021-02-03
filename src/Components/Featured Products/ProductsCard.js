@@ -11,12 +11,10 @@ const ProductsCard = ({ slug, desc, imgUrl, shortName }) => {
         <img src={imgUrl} alt={shortName} />
       </div>
       <div className='cardDesc-container'>
-        <div className='desc-cont'>
-          <h2>{shortName}</h2>
-          <p>{wordArrays.slice(0, 10).join(' ')}... </p>
-        </div>
+        <h2>{shortName}</h2>
+        <p>{wordArrays.slice(0, 7).join(' ')}... </p>
         <Link to={`/productos/${slug}`} className='desc-cta'>
-          <button type='button'>Detalles</button>
+          Detalles
         </Link>
       </div>
     </article>

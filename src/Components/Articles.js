@@ -35,9 +35,7 @@ const Articles = () => {
               </div>
               <div className='article-desc'>
                 <p>{desc}</p>
-                <Link to={`/articles/${slug}`}>
-                  <button className='articles-btn'>Continuar Leyendo...</button>
-                </Link>
+                <Link to={`/articles/${slug}`}>Continuar Leyendo...</Link>
               </div>
             </article>
           );

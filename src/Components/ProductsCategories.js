@@ -26,11 +26,11 @@ const ProductsCategories = () => {
           Categorías <span>Productos</span>
         </h2>
       </div>
-      <div className='filtros-icons'>
+      <div className='categories-icons'>
         {myCategories.map((cat) => {
           const { imgUrl, id, name, slug } = cat;
           return (
-            <Link to={`/productos/${slug}`} className='single-icon' key={id}>
+            <Link to={`/productos/${slug}`} className='singleCat-icon' key={id}>
               <img src={imgUrl} alt={name} />
               <p>{name}</p>
             </Link>
