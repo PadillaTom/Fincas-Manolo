@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { AiOutlineSearch } from 'react-icons/ai';
 import { TweenMax, Expo } from 'gsap';
 
 // Data:
 import FMHoriz from '../../Assets/FMHoriz.png';
+import { links } from '../../Utils/constants';
+
 // Context:
 import { useProductsContext } from '../../Context/products_context';
 
@@ -36,13 +37,20 @@ const Navbar = () => {
                 <FaBars onClick={openSidebar}></FaBars>
               )}
             </button>
-            <div className='nav-logo'>
-              <Link to='/'>
-                <img src={FMHoriz} alt='Inicio' />
-              </Link>
-            </div>
-            <div className='nav-search'>
-              <AiOutlineSearch></AiOutlineSearch>
+
+            <Link to='/' className='nav-logo'>
+              <img src={FMHoriz} alt='Inicio' />
+            </Link>
+
+            <div className='desktop-links'>
+              {links.map((link) => {
+                const { id, name, url } = link;
+                return (
+                  <Link to={url} key={id} className='desktop-link'>
+                    {name}
+                  </Link>
+                );
+              })}
             </div>
           </div>
           {/* DESKTOP LINKS */}

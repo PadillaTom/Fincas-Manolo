@@ -11,17 +11,12 @@ import {
 // Data:
 import { links } from '../../Utils/constants';
 import { useProductsContext } from '../../Context/products_context';
-import { GetInnerHeight } from '../../Utils/helpers';
 
 const Sidebar = () => {
   // Hook Context:
   const { isSidebarOpen, closeSidebar } = useProductsContext();
-  const myHeight = GetInnerHeight();
   return (
-    <aside
-      // style={{ height: `${myHeight}px` }}
-      className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
-    >
+    <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
       {/* Links */}
       <ul className='side-links'>
         {links.map((link) => {

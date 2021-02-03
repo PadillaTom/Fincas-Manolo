@@ -1,7 +1,12 @@
 // Queries
 @import "include-media.scss"
 // How to use:
-// @include media (">=phone")
+// @include media (">=phone" , "<=desktop")
+// 'phone': 375px,
+// 'tablet': 768px,
+// 'laptop': 992px,
+// 'desktop': 1250px,
+// 'LGdesktop': 1920px,
 
 
 //  
@@ -47,6 +52,9 @@ $MaxWidth: 1200px
 // ---> GLOBALS <---
 // ::::::::::::::::::::::::
 //  */
+#root
+  max-width: 100vw
+  overflow-x: hidden
 * 
   margin: 0
   padding: 0
@@ -66,8 +74,14 @@ button
 
 /* Sections */
 .section 
-  width: 100vw  
+  width: 100% 
   margin-top: 4rem
+  // Queries
+  @include media (">tablet")
+    margin-top: 5rem
+  @include media (">=LGdesktop")
+    margin-top: 6.5rem  
+
 .section-center 
   width: 90%  
   margin: 0 auto
@@ -121,8 +135,6 @@ button
   letter-spacing: 1.2px
   text-align: center
   margin: 2.5rem 0rem
-
-
 
 
 
@@ -182,11 +194,6 @@ button
     color: $MainWhite
     border: 1px solid white
 
-
-
-    
-  
-
 /*  ::::: Navbar Component :::::  */
 .navContainer 
   width: 100%
@@ -201,27 +208,49 @@ button
   z-index: 5
   box-shadow: 0 2px 6px 0 #5c5c5c33
   // Queries
-
+  @include media (">tablet")
+    height: 5rem
+  @include media (">=LGdesktop") 
+    height: 6.5rem
 
 .nav-center
   width: 90%
-  margin: 0 auto
-  max-width: $MaxWidth
+  margin: 0 auto  
 .nav-header
   display: flex
   align-items: center
   justify-content: space-between
-.nav-toggle
-  background: transparent
-  border: none
-  color: black
-  cursor: pointer
-  font-size: 1.3rem
-img
-  width: 10rem    
-.nav-search
-  font-size: 1.5rem  
-    
+  .nav-toggle
+    background: transparent
+    border: none
+    color: black
+    cursor: pointer
+    font-size: 1.3rem
+    @include media (">laptop")
+      display: none
+  .nav-logo 
+    img
+      width: 12rem
+      @include media (">tablet")
+        width: 16rem
+
+.desktop-links
+  display: none
+  @include media (">laptop")  
+    display: block
+  .desktop-link
+    font-size: 1.2rem
+    font-family: $FontTexts
+    font-weight: 500
+    margin-left: 1.2rem
+    cursor: pointer
+    transition: $MainTrans
+    &:hover
+      color: $SubtitleColor2
+    @include media (">=LGdesktop") 
+      font-size: 1.7rem
+      letter-spacing: 1.1px
+      margin-left: 2rem
 
 /*  ::::: Sidebar Component :::::  */
 .sidebar
@@ -230,7 +259,7 @@ img
   position: fixed
   top: 3.9rem
   left: 0
-  width: 100%   
+  width: 100% 
   background: $MainWhite
   transform: scale(0.95)
   opacity: 0
@@ -273,7 +302,7 @@ img
     margin-bottom: 0.25rem
     font-size: 1.5rem
 .side-help-container
-  padding: 1rem 0rem
+  padding: 1.5rem 0rem
 .side-help-item
   display: flex
   width: 75%
@@ -316,6 +345,7 @@ img
 /*  ::::: Homepage :::::  */
 .home-sect 
   height: auto
+
 
 /*  ::::: HeroNew Component :::::  */
 .heroContainer
