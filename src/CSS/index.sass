@@ -1,6 +1,5 @@
 // Queries
 @import "include-media.scss"
-
 // How to use:
 // @include media (">=phone")
 
@@ -117,7 +116,6 @@ button
   font-size: 1.2rem
   letter-spacing: 1.2px 
   text-transform: uppercase
-
 .main-desc
   font-family: $FontTexts
   letter-spacing: 1.2px
@@ -227,9 +225,10 @@ img
 
 /*  ::::: Sidebar Component :::::  */
 .sidebar
+  height: calc(100vh - 3.9rem)
   text-align: center
   position: fixed
-  top: 4rem
+  top: 3.9rem
   left: 0
   width: 100%   
   background: $MainWhite
@@ -237,6 +236,9 @@ img
   opacity: 0
   transition: $FastTrans
   z-index: -1 
+  display: flex
+  flex-direction: column
+
 .show-sidebar
   transform: scale(1)
   opacity: 1
@@ -244,7 +246,7 @@ img
 
 // Links
 .side-links  
-  height: 47%
+  height: 50%
   display: flex  
   flex-direction: column
   justify-content: space-between
@@ -264,14 +266,14 @@ img
 
 // Help
 .side-help  
-  margin: 1.25rem 0rem  
+  flex: 1
   h2
     letter-spacing: 1px
     color: $Gray1
     margin-bottom: 0.25rem
     font-size: 1.5rem
 .side-help-container
-  margin-top: 0.75rem
+  padding: 1rem 0rem
 .side-help-item
   display: flex
   width: 75%
@@ -288,8 +290,9 @@ img
 
 // Social 
 .side-social
-  margin: 1.25rem 0rem  
-  h2
+  flex: 1 
+  padding-top: 1rem  
+  h2    
     letter-spacing: 1px
     color: $Gray1
     margin-bottom: 0.25rem

@@ -19,7 +19,7 @@ const Sidebar = () => {
   const myHeight = GetInnerHeight();
   return (
     <aside
-      style={{ height: `${myHeight}px` }}
+      // style={{ height: `${myHeight}px` }}
       className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
     >
       {/* Links */}
@@ -34,9 +34,9 @@ const Sidebar = () => {
             </li>
           );
         })}
+        <hr />
       </ul>
 
-      <hr />
       {/* Contact Mail */}
       <div className='side-help'>
         <h2>¿Necesitas Ayuda?</h2>
@@ -54,8 +54,8 @@ const Sidebar = () => {
             <p>+41 79 400 26 93</p>
           </div>
         </div>
+        <hr />
       </div>
-      <hr />
 
       {/* Social */}
       <div className='side-social'>
