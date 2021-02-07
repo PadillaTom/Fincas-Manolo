@@ -796,8 +796,8 @@ button {
       height: 25rem; } }
   @media (min-width: 1250px) {
     .productCard {
-      height: 30rem;
-      width: 30%; } }
+      height: 25rem;
+      width: 14%; } }
   .productCard .cardImg-container {
     width: 100%;
     height: 100%;

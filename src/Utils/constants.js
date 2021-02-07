@@ -80,21 +80,6 @@ export const articles = [
       'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/diaguita.jpg?alt=media&token=9c2267d5-3d39-46e4-b6c7-678494cbc20b',
     slug: 'los-diaguitas',
   },
-  {
-    id: 2,
-    title: 'Los Diaguitas',
-    subtitle: 'Nuestra Herencia',
-    contentTitle: 'Hace cientos de años',
-    content: `Nuestros viñedos se encuentran en tierras que habitaron los Diaguitas, pueblos originarios de La Rioja, Argentina, hace cientos de años. Fueron los Incas quienes les dieron ese nombre, que significa “gente de las colinas”.
-              La falta de lluvia, un problema constante y cotidiano para los Diaguitas, es ahora uno de los factores clave para producir los vinos de alta calidad que hoy se originan en este valle desierto y estéril. 
-              Para honrar la cultura Diaguita y su herencia hemos adoptado algunos de sus símbolos para representar nuestros vinos. Los Diaguitas creían que el Cóndor era la criatura más cercana a la divinidad y lo consideraban un mensajero de los espíritus.
-              El Puma que usamos en nuestro logo y las etiquetas de La Puerta representa el ser terrenal supremo por su sabiduría, fuerza e inteligencia.`,
-    desc:
-      'Nuestros viñedos se encuentran en tierras que habitaron los Diaguitas, pueblos originarios de La Rioja, Argentina, hace cientos de años.',
-    imgUrl:
-      'https://firebasestorage.googleapis.com/v0/b/fincas-manolo-63f79.appspot.com/o/diaguita.jpg?alt=media&token=9c2267d5-3d39-46e4-b6c7-678494cbc20b',
-    slug: 'los-diaguitas',
-  },
 ];
 
 // ---> Productos <---
