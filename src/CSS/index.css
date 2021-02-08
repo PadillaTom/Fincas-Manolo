@@ -461,7 +461,7 @@ button {
 
 /*  ::::: Services NEW :::::  */
 .servicesContainer {
-  padding: 1.5rem 0rem; }
+  padding-top: 1.5rem; }
 
 .serviciosArtContainer {
   margin: 0 auto;
@@ -491,27 +491,31 @@ button {
     width: 100%; }
     .singleServ-container .serv-izq img {
       width: 100%; }
-  .singleServ-container .serv-der h4 {
-    color: #d5b13a;
-    letter-spacing: 1.2px;
-    margin-bottom: 0.5rem;
-    font-family: "Roboto Mono", monospace;
-    font-weight: 500; }
-    @media (min-width: 768px) {
-      .singleServ-container .serv-der h4 {
-        font-size: 1.8rem;
-        letter-spacing: 1.5px;
-        margin-bottom: 1rem; } }
-  .singleServ-container .serv-der p {
-    font-family: #828282;
-    letter-spacing: 0.5px;
-    line-height: 1.3;
-    font-family: "Raleway", sans-serif;
-    font-size: 0.9rem; }
-    @media (min-width: 768px) {
-      .singleServ-container .serv-der p {
-        font-size: 1.3rem;
-        letter-spacing: 1.2px; } }
+  .singleServ-container .serv-der {
+    align-self: start; }
+    .singleServ-container .serv-der h4 {
+      color: #d5b13a;
+      letter-spacing: 1.2px;
+      margin-bottom: 0.5rem;
+      font-family: "Roboto Mono", monospace;
+      font-weight: 500; }
+      @media (min-width: 768px) {
+        .singleServ-container .serv-der h4 {
+          font-size: 1.8rem;
+          letter-spacing: 1.5px;
+          padding-bottom: 3rem; } }
+    .singleServ-container .serv-der p {
+      font-family: #828282;
+      letter-spacing: 0.5px;
+      line-height: 1.3;
+      font-family: "Raleway", sans-serif;
+      font-size: 0.9rem; }
+      @media (min-width: 768px) {
+        .singleServ-container .serv-der p {
+          font-size: 1.3rem;
+          letter-spacing: 1.2px;
+          width: 75%;
+          margin: 0 auto; } }
 
 /*  ::::: Promoted Products :::::  */
 .promoContainer {
@@ -1183,21 +1187,49 @@ button {
   width: 100%;
   height: 40vh;
   object-fit: cover;
+  object-position: top center;
   margin-top: 3rem;
   border-top: 1px solid #8c1212;
   border-bottom: 1px solid #8c1212; }
+  @media (min-width: 768px) {
+    .articleImg {
+      height: 45vh; } }
+  @media (min-width: 992px) {
+    .articleImg {
+      height: 60vh; } }
+  @media (min-width: 1250px) {
+    .articleImg {
+      border: 1px solid #8c1212;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      height: 70vh; } }
 
 .articleContent {
   width: 95%;
+  font-size: 1rem;
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 2.5rem;
   margin-top: 1.5rem; }
+  @media (min-width: 768px) {
+    .articleContent {
+      width: 85%;
+      font-size: 1.2rem; } }
+  @media (min-width: 992px) {
+    .articleContent {
+      width: 82%;
+      font-size: 1.3rem; } }
+  @media (min-width: 1250px) {
+    .articleContent {
+      width: 75%;
+      font-size: 1.6rem; } }
   .articleContent p {
     font-family: "Raleway", sans-serif;
     color: #272727;
     letter-spacing: 1.2px;
     line-height: 1.2;
-    font-size: 1rem;
     width: 90%;
     margin: 0 auto; }
 
