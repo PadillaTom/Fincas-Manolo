@@ -1013,8 +1013,11 @@ button
     widht: 70%
     height: 30rem
   @include media (">=laptop")
-    width: 65%
-    height: 25rem
+    width: 60%
+    height: 35rem  
+  @include media (">=desktop")
+    width: 50%
+    height: 40rem  
   img
     border-radius: 0.3rem
     width: 100%
@@ -1040,21 +1043,24 @@ button
       text-transform: uppercase 
       @include media (">=tablet")
         font-size: 1.5rem   
+      
   .main-desc
     width: 87%
     margin: 0 auto
-    padding: 1rem 0rem
+    padding: 1.5rem 0rem
     font-family: $FontTexts
     letter-spacing: 1.1px
     @include media (">=tablet")
-      width: 85%    
+      width: 85%   
+    @include media (">=desktop") 
+      width: 65%
 
   .main-peso-price
     width: 60%
-    margin: 0 auto
+    margin: 1.5rem auto
     display: flex
     align-items: center 
-    justify-content: space-between
+    justify-content: space-between    
     p
       font-family: $FontTexts
       letter-spacing: 1.3px

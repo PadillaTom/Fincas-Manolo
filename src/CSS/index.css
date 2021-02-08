@@ -1058,8 +1058,12 @@ button {
       height: 30rem; } }
   @media (min-width: 992px) {
     .displayer-left {
-      width: 65%;
-      height: 25rem; } }
+      width: 60%;
+      height: 35rem; } }
+  @media (min-width: 1250px) {
+    .displayer-left {
+      width: 50%;
+      height: 40rem; } }
   .displayer-left img {
     border-radius: 0.3rem;
     width: 100%;
@@ -1091,15 +1095,18 @@ button {
   .displayer-right .main-desc {
     width: 87%;
     margin: 0 auto;
-    padding: 1rem 0rem;
+    padding: 1.5rem 0rem;
     font-family: "Raleway", sans-serif;
     letter-spacing: 1.1px; }
     @media (min-width: 768px) {
       .displayer-right .main-desc {
         width: 85%; } }
+    @media (min-width: 1250px) {
+      .displayer-right .main-desc {
+        width: 65%; } }
   .displayer-right .main-peso-price {
     width: 60%;
-    margin: 0 auto;
+    margin: 1.5rem auto;
     display: flex;
     align-items: center;
     justify-content: space-between; }
